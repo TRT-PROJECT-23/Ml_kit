@@ -30,7 +30,6 @@ import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 import com.google.android.gms.common.annotation.KeepName;
-import com.google.mlkit.common.model.LocalModel;
 import com.google.mlkit.vision.barcode.ZoomSuggestionOptions.ZoomCallback;
 import com.google.mlkit.vision.demo.CameraSource;
 import com.google.mlkit.vision.demo.CameraSourcePreview;
@@ -42,10 +41,7 @@ import com.google.mlkit.vision.demo.java.textdetector.TextRecognitionProcessor;
 import com.google.mlkit.vision.demo.preference.PreferenceUtils;
 import com.google.mlkit.vision.demo.preference.SettingsActivity;
 
-import com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions;
-import com.google.mlkit.vision.text.devanagari.DevanagariTextRecognizerOptions;
-import com.google.mlkit.vision.text.japanese.JapaneseTextRecognizerOptions;
-import com.google.mlkit.vision.text.korean.KoreanTextRecognizerOptions;
+
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -102,11 +98,7 @@ public final class LivePreviewActivity extends AppCompatActivity
     options.add(BARCODE_SCANNING);
 
     options.add(TEXT_RECOGNITION_LATIN);
-    options.add(TEXT_RECOGNITION_CHINESE);
-    options.add(TEXT_RECOGNITION_DEVANAGARI);
-    options.add(TEXT_RECOGNITION_JAPANESE);
-    options.add(TEXT_RECOGNITION_KOREAN);
-    options.add(FACE_MESH_DETECTION);
+
 
     // Creating adapter for spinner
     ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this, R.layout.spinner_style, options);
@@ -175,30 +167,10 @@ public final class LivePreviewActivity extends AppCompatActivity
           cameraSource.setMachineLearningFrameProcessor(
               new TextRecognitionProcessor(this, new TextRecognizerOptions.Builder().build()));
           break;
-        case TEXT_RECOGNITION_CHINESE:
-          Log.i(TAG, "Using on-device Text recognition Processor for Latin and Chinese.");
-          cameraSource.setMachineLearningFrameProcessor(
-              new TextRecognitionProcessor(
-                  this, new ChineseTextRecognizerOptions.Builder().build()));
-          break;
-        case TEXT_RECOGNITION_DEVANAGARI:
-          Log.i(TAG, "Using on-device Text recognition Processor for Latin and Devanagari.");
-          cameraSource.setMachineLearningFrameProcessor(
-              new TextRecognitionProcessor(
-                  this, new DevanagariTextRecognizerOptions.Builder().build()));
-          break;
-        case TEXT_RECOGNITION_JAPANESE:
-          Log.i(TAG, "Using on-device Text recognition Processor for Latin and Japanese.");
-          cameraSource.setMachineLearningFrameProcessor(
-              new TextRecognitionProcessor(
-                  this, new JapaneseTextRecognizerOptions.Builder().build()));
-          break;
-        case TEXT_RECOGNITION_KOREAN:
-          Log.i(TAG, "Using on-device Text recognition Processor for Latin and Korean.");
-          cameraSource.setMachineLearningFrameProcessor(
-              new TextRecognitionProcessor(
-                  this, new KoreanTextRecognizerOptions.Builder().build()));
-          break;
+
+
+
+
 
         case BARCODE_SCANNING:
           Log.i(TAG, "Using Barcode Detector Processor");

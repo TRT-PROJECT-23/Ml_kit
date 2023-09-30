@@ -280,7 +280,6 @@
     <attr format="float" name="motionProgress"/>
     <attr format="float" name="motionStagger"/>
     <attr format="reference|string" name="motionTarget"/>
-    <attr format="reference" name="nestedScrollViewStyle"/>
     <attr format="enum" name="pathMotionArc">
         <enum name="none" value="0"/>
         <enum name="startVertical" value="1"/>
@@ -348,10 +347,6 @@
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_allow_stacked_button_bar">false</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
-    <bool name="enable_system_alarm_service_default">true</bool>
-    <bool name="enable_system_foreground_service_default">true</bool>
-    <bool name="enable_system_job_service_default">false</bool>
-    <bool name="workmanager_test_configuration">false</bool>
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -605,15 +600,10 @@
     <item name="tag_accessibility_clickable_spans" type="id"/>
     <item name="tag_accessibility_heading" type="id"/>
     <item name="tag_accessibility_pane_title" type="id"/>
-    <item name="tag_on_apply_window_listener" type="id"/>
-    <item name="tag_on_receive_content_listener" type="id"/>
-    <item name="tag_on_receive_content_mime_types" type="id"/>
     <item name="tag_screen_reader_focusable" type="id"/>
-    <item name="tag_state_description" type="id"/>
     <item name="tag_transition_group" type="id"/>
     <item name="tag_unhandled_key_event_manager" type="id"/>
     <item name="tag_unhandled_key_listeners" type="id"/>
-    <item name="tag_window_insets_animation_callback" type="id"/>
     <item name="text" type="id"/>
     <item name="text2" type="id"/>
     <item name="title" type="id"/>
@@ -653,7 +643,6 @@
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="androidx_camera_default_config_provider" translatable="false"/>
-    <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name" translatable="false">MLKit-Vision</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
@@ -2944,12 +2933,6 @@
 
         <attr format="boolean" name="pinchToZoomEnabled"/>
     </declare-styleable>
-    <declare-styleable name="Capability">
-        
-        <attr format="reference" name="queryPatterns"/>
-        
-        <attr format="boolean" name="shortcutMatchRequired"/>
-    </declare-styleable>
     <declare-styleable name="ColorStateListItem">
         
         <attr name="android:color"/>
@@ -3038,8 +3021,6 @@
               timeout and wait until a reply is received from the font provider. -->
             <enum name="forever" value="-1"/>
         </attr>
-        
-        <attr format="string" name="fontProviderSystemFontFamily"/>
     </declare-styleable>
     <declare-styleable name="FontFamilyFont">
         

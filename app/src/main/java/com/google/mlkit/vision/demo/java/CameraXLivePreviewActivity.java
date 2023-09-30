@@ -58,10 +58,7 @@ import com.google.mlkit.vision.demo.java.textdetector.TextRecognitionProcessor;
 import com.google.mlkit.vision.demo.preference.PreferenceUtils;
 import com.google.mlkit.vision.demo.preference.SettingsActivity;
 
-import com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions;
-import com.google.mlkit.vision.text.devanagari.DevanagariTextRecognizerOptions;
-import com.google.mlkit.vision.text.japanese.JapaneseTextRecognizerOptions;
-import com.google.mlkit.vision.text.korean.KoreanTextRecognizerOptions;
+
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions;
 import java.util.ArrayList;
 import java.util.List;
@@ -74,22 +71,8 @@ public final class CameraXLivePreviewActivity extends AppCompatActivity
   private static final String TAG = "CameraXLivePreview";
 
   private static final String OBJECT_DETECTION = "Object Detection";
-  private static final String OBJECT_DETECTION_CUSTOM = "Custom Object Detection";
-  private static final String CUSTOM_AUTOML_OBJECT_DETECTION =
-      "Custom AutoML Object Detection (Flower)";
-  private static final String FACE_DETECTION = "Face Detection";
   private static final String BARCODE_SCANNING = "Barcode Scanning";
-  private static final String IMAGE_LABELING = "Image Labeling";
-  private static final String IMAGE_LABELING_CUSTOM = "Custom Image Labeling (Birds)";
-  private static final String CUSTOM_AUTOML_LABELING = "Custom AutoML Image Labeling (Flower)";
-  private static final String POSE_DETECTION = "Pose Detection";
-  private static final String SELFIE_SEGMENTATION = "Selfie Segmentation";
   private static final String TEXT_RECOGNITION_LATIN = "Text Recognition Latin";
-  private static final String TEXT_RECOGNITION_CHINESE = "Text Recognition Chinese";
-  private static final String TEXT_RECOGNITION_DEVANAGARI = "Text Recognition Devanagari";
-  private static final String TEXT_RECOGNITION_JAPANESE = "Text Recognition Japanese";
-  private static final String TEXT_RECOGNITION_KOREAN = "Text Recognition Korean";
-  private static final String FACE_MESH_DETECTION = "Face Mesh Detection (Beta)";
 
   private static final String STATE_SELECTED_MODEL = "selected_model";
 
@@ -133,11 +116,8 @@ public final class CameraXLivePreviewActivity extends AppCompatActivity
     options.add(BARCODE_SCANNING);
 
     options.add(TEXT_RECOGNITION_LATIN);
-    options.add(TEXT_RECOGNITION_CHINESE);
-    options.add(TEXT_RECOGNITION_DEVANAGARI);
-    options.add(TEXT_RECOGNITION_JAPANESE);
-    options.add(TEXT_RECOGNITION_KOREAN);
-    options.add(FACE_MESH_DETECTION);
+
+
 
     // Creating adapter for spinner
     ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this, R.layout.spinner_style, options);
@@ -289,29 +269,10 @@ public final class CameraXLivePreviewActivity extends AppCompatActivity
 
 
 
-        case TEXT_RECOGNITION_CHINESE:
-          Log.i(TAG, "Using on-device Text recognition Processor for Latin and Chinese.");
-          imageProcessor =
-              new TextRecognitionProcessor(
-                  this, new ChineseTextRecognizerOptions.Builder().build());
-          break;
-        case TEXT_RECOGNITION_DEVANAGARI:
-          Log.i(TAG, "Using on-device Text recognition Processor for Latin and Devanagari.");
-          imageProcessor =
-              new TextRecognitionProcessor(
-                  this, new DevanagariTextRecognizerOptions.Builder().build());
-          break;
-        case TEXT_RECOGNITION_JAPANESE:
-          Log.i(TAG, "Using on-device Text recognition Processor for Latin and Japanese.");
-          imageProcessor =
-              new TextRecognitionProcessor(
-                  this, new JapaneseTextRecognizerOptions.Builder().build());
-          break;
-        case TEXT_RECOGNITION_KOREAN:
-          Log.i(TAG, "Using on-device Text recognition Processor for Latin and Korean.");
-          imageProcessor =
-              new TextRecognitionProcessor(this, new KoreanTextRecognizerOptions.Builder().build());
-          break;
+
+
+
+
         case TEXT_RECOGNITION_LATIN:
           Log.i(TAG, "Using on-device Text recognition Processor for Latin.");
           imageProcessor =

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.mlkit.vision.demo.app-mergeDebugResources-17:/values-ur/values-ur.xml",
+            "outputFile": "com.google.mlkit.vision.demo.app-mergeDebugResources-12:/values-ur/values-ur.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\arzka\\.gradle\\caches\\transforms-3\\d887537eab6d958679ebc309dbbff323\\transformed\\core-1.6.0\\res\\values-ur\\values-ur.xml",
+                    "source": "C:\\Users\\arzka\\.gradle\\caches\\transforms-3\\540d0c806765a84261a58df822af3250\\transformed\\core-1.3.1\\res\\values-ur\\values-ur.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,31 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:2:1-118:12
-INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:2:1-118:12
-INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:2:1-118:12
-INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:2:1-118:12
-MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\05e15d9f1b8ae339b13eedfc08c68522\transformed\pose-detection-18.0.0-beta3\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\2faf190affe07c8af04571413ba9d509\transformed\pose-detection-accurate-18.0.0-beta3\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:2:1-35:12
-MERGED from [com.google.mlkit:acceleration:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\2f919cab3fc3b3758fd69b579b96d287\transformed\acceleration-16.0.0-beta1\AndroidManifest.xml:2:1-14:12
-MERGED from [androidx.work:work-multiprocess:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\f9e879066840441b4c414887dce2e2d0\transformed\work-multiprocess-2.7.0\AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.work:work-runtime-ktx:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\78032424469eb01e09b095b7e8acc674\transformed\work-runtime-ktx-2.7.0\AndroidManifest.xml:17:1-24:12
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:2:1-95:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\arzka\.gradle\caches\transforms-3\0b2d2ae914794af9cc0b75b6e59aac4f\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.mlkit:barcode-scanning:17.2.0] C:\Users\arzka\.gradle\caches\transforms-3\7a33d0d59a9ec352db0a9d94d69b785f\transformed\barcode-scanning-17.2.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:2:1-20:12
-MERGED from [com.google.mlkit:object-detection-custom:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\1bdb1ba3cafbae53b077662ecfdd7514\transformed\object-detection-custom-17.0.0\AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.mlkit:face-detection:16.1.5] C:\Users\arzka\.gradle\caches\transforms-3\12b8bceb641b3bad080208db9ca41755\transformed\face-detection-16.1.5\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.mlkit:text-recognition:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\dfa4f7f91809196e78714cd9654242a3\transformed\text-recognition-16.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:text-recognition-chinese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\75040fcff04ecaae8a920c79d998ef78\transformed\text-recognition-chinese-16.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:text-recognition-devanagari:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\8dad5404ebcb5a3ee392413545293b40\transformed\text-recognition-devanagari-16.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:text-recognition-japanese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\b96a6a7b5c9fba5ee2c8efb18c304869\transformed\text-recognition-japanese-16.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:text-recognition-korean:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d3f18386153ed6e1c4092bc9792a6f15\transformed\text-recognition-korean-16.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:image-labeling:17.0.7] C:\Users\arzka\.gradle\caches\transforms-3\cbcdea1e53faef98cca04e2fff6a0827\transformed\image-labeling-17.0.7\AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\b6836ce2f1b41ffe0e9ab939a55337bb\transformed\image-labeling-custom-17.0.1\AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\arzka\.gradle\caches\transforms-3\b4e3842319fbd9a5aa6ad20dd67b8d12\transformed\segmentation-selfie-16.0.0-beta4\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.mlkit:camera:16.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\fdfdd205993b55b4b058bde1dd91924e\transformed\camera-16.0.0-beta3\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\8772953ad898a83597aba8a67d9f9e7a\transformed\face-mesh-detection-16.0.0-beta1\AndroidManifest.xml:2:1-17:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\ead91a225aa07d2e458c632c27c75cd9\transformed\lifecycle-extensions-2.1.0\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.camera:camera-camera2:1.0.0-SNAPSHOT] C:\Users\arzka\.gradle\caches\transforms-3\9b758175c3e5b15c5746831cd9bf8f12\transformed\camera-camera2-1.0.0-SNAPSHOT\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.camera:camera-view:1.0.0-SNAPSHOT] C:\Users\arzka\.gradle\caches\transforms-3\a8c8899b9721829c1dcdff07e4b65303\transformed\camera-view-1.0.0-SNAPSHOT\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.camera:camera-lifecycle:1.0.0-SNAPSHOT] C:\Users\arzka\.gradle\caches\transforms-3\d9f5b8639330aaf72e963d545fa567b6\transformed\camera-lifecycle-1.0.0-SNAPSHOT\AndroidManifest.xml:17:1-24:12
@@ -34,20 +16,9 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\arzka\.g
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\arzka\.gradle\caches\transforms-3\262e51c9b65e7b92dba219ea33cbff22\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\5cf65534a42a0f3ce73864d803d65cee\transformed\barcode-scanning-common-17.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:object-detection-common:18.0.0] C:\Users\arzka\.gradle\caches\transforms-3\279ff538cd0f54871f81c943f57d657c\transformed\object-detection-common-18.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:2:1-20:12
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\9e30bbd526ce35f021cea5f634254893\transformed\play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.mlkit:text-recognition-bundled-common:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\bb11b0a43af1f01b83c99d0c07123282\transformed\text-recognition-bundled-common-16.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\9dede852fb5a6be43e14ae3d9627363c\transformed\play-services-mlkit-text-recognition-19.0.0\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\8aa3be3870d6d5d791e1f27fd79ec7d1\transformed\play-services-mlkit-text-recognition-chinese-16.0.0\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\7ad39f7451e4365c4da39949a944be81\transformed\play-services-mlkit-text-recognition-devanagari-16.0.0\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\fb3a0bd317fb245a4a4f232a4bf00e42\transformed\play-services-mlkit-text-recognition-japanese-16.0.0\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-korean:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\5a99d0fa131cff544f6a11515d58b906\transformed\play-services-mlkit-text-recognition-korean-16.0.0\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.mlkit:image-labeling-default-common:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\18017eed774e635a0ab5f37c2bd9ddcc\transformed\image-labeling-default-common-17.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:image-labeling-custom-common:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\f627ecab04f39b25acde54fa84ce6eb3\transformed\image-labeling-custom-common-17.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:image-labeling-common:18.0.0] C:\Users\arzka\.gradle\caches\transforms-3\e9d11105fff81e3f024029b68c8dbc32\transformed\image-labeling-common-18.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:mediapipe-internal:17.0.0-beta8] C:\Users\arzka\.gradle\caches\transforms-3\1f5927aed8c2aae6bebb2b80fc650620\transformed\mediapipe-internal-17.0.0-beta8\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
@@ -56,7 +27,6 @@ MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\arzka\.
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\8b8f66adbd3b8925c5755789a42db741\transformed\play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\6ade215d7dd766a68f1ec1fd88bbc668\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\698932e4c3cbfe19afbc581a7309ca2b\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:17:1-145:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] C:\Users\arzka\.gradle\caches\transforms-3\95ce34ac9cbb6b805a22a2b188306151\transformed\lifecycle-livedata-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\bbc0d7a9d05f61fa48fbb8aac8b73975\transformed\activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\arzka\.gradle\caches\transforms-3\6fa7fb082a62a9fbdcd22f008170fdd3\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
@@ -66,29 +36,22 @@ MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\arzk
 MERGED from [com.google.firebase:firebase-components:16.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5fd9e0753a79803c6cdcc1c9a767c745\transformed\firebase-components-16.1.0\AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] C:\Users\arzka\.gradle\caches\transforms-3\9ebdf0f85c0bbaab4ab4c51f13be68a9\transformed\firebase-encoders-json-17.1.0\AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\arzka\.gradle\caches\transforms-3\73a48059ccf864d607057ce403b86457\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\arzka\.gradle\caches\transforms-3\0ac598a68c97b0035b745dda3ba86614\transformed\room-runtime-2.2.5\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\67afd400e2ae062efb94f1608e965e51\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\94bbe6277505127643584e304eedb3d0\transformed\lifecycle-process-2.1.0\AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\e9a7dbbe5cec93c45d88695ecaeecd51\transformed\lifecycle-service-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\arzka\.gradle\caches\transforms-3\e980f1566fc9f00742f1f4b8fafcf1a1\transformed\appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\9e2f3b08bd94950d58324054307ec949\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\ba34c170e0ab36d58eec4f9cb7812ace\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\06810007ba98ddd5c50e0a443224a1a2\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\45bfe34a8a88dcaae4e1992e7e8f78b0\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\7cd21211a0e0dd75c6e2e612b40b5355\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.6.0] C:\Users\arzka\.gradle\caches\transforms-3\d887537eab6d958679ebc309dbbff323\transformed\core-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.core:core:1.3.1] C:\Users\arzka\.gradle\caches\transforms-3\540d0c806765a84261a58df822af3250\transformed\core-1.3.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\c22768997b02fe30c52d8261eea88fd6\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\fa72bdc595506aa79f5fb8538e60519d\transformed\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\869d33f1897189da2137a52f6ef36d88\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\9b314ced4a28876587bfbc85a71cbac8\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\arzka\.gradle\caches\transforms-3\03ba7436586890429c28a3b2810439c5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\90a0301b4794943bcf9722fa4f0a2d27\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\f18d1606ddcc87523b076d1f0c2f5a5d\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\e8596bb8a74b9c72d6598141d94a3d4e\transformed\startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\7dc0867871f08cc117e35cade69a0c2a\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\bed2348e6b98cec4fa27061b94446069\transformed\sqlite-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\2a79bfcc826fbdb1a73c3af74226b59e\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\c536dd12c7474e02a5baa7fadefe7938\transformed\image-1.0.0-beta1\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\3fca7e9797d88182bbb9d2736945f1c2\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0-rc01] C:\Users\arzka\.gradle\caches\transforms-3\653e6657d1777483fda3870ab116b9f7\transformed\annotation-experimental-1.0.0-rc01\AndroidManifest.xml:17:1-24:12
 	package
 		INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -105,50 +68,14 @@ uses-sdk
 ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:11:5-14:63
 INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:11:5-14:63
 INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:11:5-14:63
-MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\05e15d9f1b8ae339b13eedfc08c68522\transformed\pose-detection-18.0.0-beta3\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\05e15d9f1b8ae339b13eedfc08c68522\transformed\pose-detection-18.0.0-beta3\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\2faf190affe07c8af04571413ba9d509\transformed\pose-detection-accurate-18.0.0-beta3\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\2faf190affe07c8af04571413ba9d509\transformed\pose-detection-accurate-18.0.0-beta3\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:acceleration:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\2f919cab3fc3b3758fd69b579b96d287\transformed\acceleration-16.0.0-beta1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:acceleration:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\2f919cab3fc3b3758fd69b579b96d287\transformed\acceleration-16.0.0-beta1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.work:work-multiprocess:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\f9e879066840441b4c414887dce2e2d0\transformed\work-multiprocess-2.7.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.work:work-multiprocess:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\f9e879066840441b4c414887dce2e2d0\transformed\work-multiprocess-2.7.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.work:work-runtime-ktx:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\78032424469eb01e09b095b7e8acc674\transformed\work-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.work:work-runtime-ktx:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\78032424469eb01e09b095b7e8acc674\transformed\work-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\arzka\.gradle\caches\transforms-3\0b2d2ae914794af9cc0b75b6e59aac4f\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\arzka\.gradle\caches\transforms-3\0b2d2ae914794af9cc0b75b6e59aac4f\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
 MERGED from [com.google.mlkit:barcode-scanning:17.2.0] C:\Users\arzka\.gradle\caches\transforms-3\7a33d0d59a9ec352db0a9d94d69b785f\transformed\barcode-scanning-17.2.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:barcode-scanning:17.2.0] C:\Users\arzka\.gradle\caches\transforms-3\7a33d0d59a9ec352db0a9d94d69b785f\transformed\barcode-scanning-17.2.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:object-detection-custom:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\1bdb1ba3cafbae53b077662ecfdd7514\transformed\object-detection-custom-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:object-detection-custom:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\1bdb1ba3cafbae53b077662ecfdd7514\transformed\object-detection-custom-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:face-detection:16.1.5] C:\Users\arzka\.gradle\caches\transforms-3\12b8bceb641b3bad080208db9ca41755\transformed\face-detection-16.1.5\AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:face-detection:16.1.5] C:\Users\arzka\.gradle\caches\transforms-3\12b8bceb641b3bad080208db9ca41755\transformed\face-detection-16.1.5\AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:text-recognition:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\dfa4f7f91809196e78714cd9654242a3\transformed\text-recognition-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:text-recognition:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\dfa4f7f91809196e78714cd9654242a3\transformed\text-recognition-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-chinese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\75040fcff04ecaae8a920c79d998ef78\transformed\text-recognition-chinese-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-chinese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\75040fcff04ecaae8a920c79d998ef78\transformed\text-recognition-chinese-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-devanagari:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\8dad5404ebcb5a3ee392413545293b40\transformed\text-recognition-devanagari-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-devanagari:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\8dad5404ebcb5a3ee392413545293b40\transformed\text-recognition-devanagari-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-japanese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\b96a6a7b5c9fba5ee2c8efb18c304869\transformed\text-recognition-japanese-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-japanese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\b96a6a7b5c9fba5ee2c8efb18c304869\transformed\text-recognition-japanese-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-korean:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d3f18386153ed6e1c4092bc9792a6f15\transformed\text-recognition-korean-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:text-recognition-korean:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d3f18386153ed6e1c4092bc9792a6f15\transformed\text-recognition-korean-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling:17.0.7] C:\Users\arzka\.gradle\caches\transforms-3\cbcdea1e53faef98cca04e2fff6a0827\transformed\image-labeling-17.0.7\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling:17.0.7] C:\Users\arzka\.gradle\caches\transforms-3\cbcdea1e53faef98cca04e2fff6a0827\transformed\image-labeling-17.0.7\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\b6836ce2f1b41ffe0e9ab939a55337bb\transformed\image-labeling-custom-17.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\b6836ce2f1b41ffe0e9ab939a55337bb\transformed\image-labeling-custom-17.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\arzka\.gradle\caches\transforms-3\b4e3842319fbd9a5aa6ad20dd67b8d12\transformed\segmentation-selfie-16.0.0-beta4\AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\arzka\.gradle\caches\transforms-3\b4e3842319fbd9a5aa6ad20dd67b8d12\transformed\segmentation-selfie-16.0.0-beta4\AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:camera:16.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\fdfdd205993b55b4b058bde1dd91924e\transformed\camera-16.0.0-beta3\AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:camera:16.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\fdfdd205993b55b4b058bde1dd91924e\transformed\camera-16.0.0-beta3\AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\8772953ad898a83597aba8a67d9f9e7a\transformed\face-mesh-detection-16.0.0-beta1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\8772953ad898a83597aba8a67d9f9e7a\transformed\face-mesh-detection-16.0.0-beta1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\ead91a225aa07d2e458c632c27c75cd9\transformed\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\ead91a225aa07d2e458c632c27c75cd9\transformed\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.camera:camera-camera2:1.0.0-SNAPSHOT] C:\Users\arzka\.gradle\caches\transforms-3\9b758175c3e5b15c5746831cd9bf8f12\transformed\camera-camera2-1.0.0-SNAPSHOT\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.camera:camera-camera2:1.0.0-SNAPSHOT] C:\Users\arzka\.gradle\caches\transforms-3\9b758175c3e5b15c5746831cd9bf8f12\transformed\camera-camera2-1.0.0-SNAPSHOT\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.camera:camera-view:1.0.0-SNAPSHOT] C:\Users\arzka\.gradle\caches\transforms-3\a8c8899b9721829c1dcdff07e4b65303\transformed\camera-view-1.0.0-SNAPSHOT\AndroidManifest.xml:20:5-22:41
@@ -165,34 +92,12 @@ MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0]
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\5cf65534a42a0f3ce73864d803d65cee\transformed\barcode-scanning-common-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\5cf65534a42a0f3ce73864d803d65cee\transformed\barcode-scanning-common-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:object-detection-common:18.0.0] C:\Users\arzka\.gradle\caches\transforms-3\279ff538cd0f54871f81c943f57d657c\transformed\object-detection-common-18.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:object-detection-common:18.0.0] C:\Users\arzka\.gradle\caches\transforms-3\279ff538cd0f54871f81c943f57d657c\transformed\object-detection-common-18.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\9e30bbd526ce35f021cea5f634254893\transformed\play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\9e30bbd526ce35f021cea5f634254893\transformed\play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:text-recognition-bundled-common:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\bb11b0a43af1f01b83c99d0c07123282\transformed\text-recognition-bundled-common-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:text-recognition-bundled-common:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\bb11b0a43af1f01b83c99d0c07123282\transformed\text-recognition-bundled-common-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\9dede852fb5a6be43e14ae3d9627363c\transformed\play-services-mlkit-text-recognition-19.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\9dede852fb5a6be43e14ae3d9627363c\transformed\play-services-mlkit-text-recognition-19.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\8aa3be3870d6d5d791e1f27fd79ec7d1\transformed\play-services-mlkit-text-recognition-chinese-16.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\8aa3be3870d6d5d791e1f27fd79ec7d1\transformed\play-services-mlkit-text-recognition-chinese-16.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\7ad39f7451e4365c4da39949a944be81\transformed\play-services-mlkit-text-recognition-devanagari-16.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\7ad39f7451e4365c4da39949a944be81\transformed\play-services-mlkit-text-recognition-devanagari-16.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\fb3a0bd317fb245a4a4f232a4bf00e42\transformed\play-services-mlkit-text-recognition-japanese-16.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\fb3a0bd317fb245a4a4f232a4bf00e42\transformed\play-services-mlkit-text-recognition-japanese-16.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-korean:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\5a99d0fa131cff544f6a11515d58b906\transformed\play-services-mlkit-text-recognition-korean-16.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-korean:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\5a99d0fa131cff544f6a11515d58b906\transformed\play-services-mlkit-text-recognition-korean-16.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:image-labeling-default-common:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\18017eed774e635a0ab5f37c2bd9ddcc\transformed\image-labeling-default-common-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-default-common:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\18017eed774e635a0ab5f37c2bd9ddcc\transformed\image-labeling-default-common-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-custom-common:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\f627ecab04f39b25acde54fa84ce6eb3\transformed\image-labeling-custom-common-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-custom-common:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\f627ecab04f39b25acde54fa84ce6eb3\transformed\image-labeling-custom-common-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-common:18.0.0] C:\Users\arzka\.gradle\caches\transforms-3\e9d11105fff81e3f024029b68c8dbc32\transformed\image-labeling-common-18.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:image-labeling-common:18.0.0] C:\Users\arzka\.gradle\caches\transforms-3\e9d11105fff81e3f024029b68c8dbc32\transformed\image-labeling-common-18.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:mediapipe-internal:17.0.0-beta8] C:\Users\arzka\.gradle\caches\transforms-3\1f5927aed8c2aae6bebb2b80fc650620\transformed\mediapipe-internal-17.0.0-beta8\AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:mediapipe-internal:17.0.0-beta8] C:\Users\arzka\.gradle\caches\transforms-3\1f5927aed8c2aae6bebb2b80fc650620\transformed\mediapipe-internal-17.0.0-beta8\AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:6:5-44
@@ -209,8 +114,6 @@ MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\arzka\.gradle\caches\tra
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\6ade215d7dd766a68f1ec1fd88bbc668\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\698932e4c3cbfe19afbc581a7309ca2b\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\698932e4c3cbfe19afbc581a7309ca2b\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] C:\Users\arzka\.gradle\caches\transforms-3\95ce34ac9cbb6b805a22a2b188306151\transformed\lifecycle-livedata-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] C:\Users\arzka\.gradle\caches\transforms-3\95ce34ac9cbb6b805a22a2b188306151\transformed\lifecycle-livedata-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\bbc0d7a9d05f61fa48fbb8aac8b73975\transformed\activity-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -229,14 +132,8 @@ MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] C:\Users\arzka\.
 MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] C:\Users\arzka\.gradle\caches\transforms-3\9ebdf0f85c0bbaab4ab4c51f13be68a9\transformed\firebase-encoders-json-17.1.0\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\arzka\.gradle\caches\transforms-3\73a48059ccf864d607057ce403b86457\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\arzka\.gradle\caches\transforms-3\73a48059ccf864d607057ce403b86457\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\arzka\.gradle\caches\transforms-3\0ac598a68c97b0035b745dda3ba86614\transformed\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\arzka\.gradle\caches\transforms-3\0ac598a68c97b0035b745dda3ba86614\transformed\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\67afd400e2ae062efb94f1608e965e51\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\67afd400e2ae062efb94f1608e965e51\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\94bbe6277505127643584e304eedb3d0\transformed\lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\94bbe6277505127643584e304eedb3d0\transformed\lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\e9a7dbbe5cec93c45d88695ecaeecd51\transformed\lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\e9a7dbbe5cec93c45d88695ecaeecd51\transformed\lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\arzka\.gradle\caches\transforms-3\e980f1566fc9f00742f1f4b8fafcf1a1\transformed\appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\arzka\.gradle\caches\transforms-3\e980f1566fc9f00742f1f4b8fafcf1a1\transformed\appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\9e2f3b08bd94950d58324054307ec949\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
@@ -249,8 +146,8 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\arzka\.gradl
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\45bfe34a8a88dcaae4e1992e7e8f78b0\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\7cd21211a0e0dd75c6e2e612b40b5355\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\7cd21211a0e0dd75c6e2e612b40b5355\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.6.0] C:\Users\arzka\.gradle\caches\transforms-3\d887537eab6d958679ebc309dbbff323\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.6.0] C:\Users\arzka\.gradle\caches\transforms-3\d887537eab6d958679ebc309dbbff323\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\arzka\.gradle\caches\transforms-3\540d0c806765a84261a58df822af3250\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\arzka\.gradle\caches\transforms-3\540d0c806765a84261a58df822af3250\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\c22768997b02fe30c52d8261eea88fd6\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\c22768997b02fe30c52d8261eea88fd6\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\fa72bdc595506aa79f5fb8538e60519d\transformed\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -259,22 +156,14 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\arzka\.gradle\
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\869d33f1897189da2137a52f6ef36d88\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\9b314ced4a28876587bfbc85a71cbac8\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\9b314ced4a28876587bfbc85a71cbac8\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\arzka\.gradle\caches\transforms-3\03ba7436586890429c28a3b2810439c5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\arzka\.gradle\caches\transforms-3\03ba7436586890429c28a3b2810439c5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\90a0301b4794943bcf9722fa4f0a2d27\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\90a0301b4794943bcf9722fa4f0a2d27\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\f18d1606ddcc87523b076d1f0c2f5a5d\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\f18d1606ddcc87523b076d1f0c2f5a5d\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\e8596bb8a74b9c72d6598141d94a3d4e\transformed\startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\e8596bb8a74b9c72d6598141d94a3d4e\transformed\startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\7dc0867871f08cc117e35cade69a0c2a\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\7dc0867871f08cc117e35cade69a0c2a\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\bed2348e6b98cec4fa27061b94446069\transformed\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\bed2348e6b98cec4fa27061b94446069\transformed\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\2a79bfcc826fbdb1a73c3af74226b59e\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\2a79bfcc826fbdb1a73c3af74226b59e\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\c536dd12c7474e02a5baa7fadefe7938\transformed\image-1.0.0-beta1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\c536dd12c7474e02a5baa7fadefe7938\transformed\image-1.0.0-beta1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\3fca7e9797d88182bbb9d2736945f1c2\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\3fca7e9797d88182bbb9d2736945f1c2\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0-rc01] C:\Users\arzka\.gradle\caches\transforms-3\653e6657d1777483fda3870ab116b9f7\transformed\annotation-experimental-1.0.0-rc01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0-rc01] C:\Users\arzka\.gradle\caches\transforms-3\653e6657d1777483fda3870ab116b9f7\transformed\annotation-experimental-1.0.0-rc01\AndroidManifest.xml:20:5-22:41
 	tools:overrideLibrary
 		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:11:5-14:63
 	android:targetSdkVersion
@@ -287,12 +176,6 @@ ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidM
 		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:16:19-57
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:18:5-66
-MERGED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:8:5-67
-MERGED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:8:5-67
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:8:5-67
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:8:5-67
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:8:5-67
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:8:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
 	android:name
@@ -310,40 +193,12 @@ ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:21:22-62
 application
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:23:5-111:19
-INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:23:5-111:19
-MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\05e15d9f1b8ae339b13eedfc08c68522\transformed\pose-detection-18.0.0-beta3\AndroidManifest.xml:7:5-20
-MERGED from [com.google.mlkit:pose-detection:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\05e15d9f1b8ae339b13eedfc08c68522\transformed\pose-detection-18.0.0-beta3\AndroidManifest.xml:7:5-20
-MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\2faf190affe07c8af04571413ba9d509\transformed\pose-detection-accurate-18.0.0-beta3\AndroidManifest.xml:7:5-20
-MERGED from [com.google.mlkit:pose-detection-accurate:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\2faf190affe07c8af04571413ba9d509\transformed\pose-detection-accurate-18.0.0-beta3\AndroidManifest.xml:7:5-20
-MERGED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:10:5-33:19
-MERGED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:10:5-33:19
-MERGED from [com.google.mlkit:acceleration:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\2f919cab3fc3b3758fd69b579b96d287\transformed\acceleration-16.0.0-beta1\AndroidManifest.xml:7:5-12:19
-MERGED from [com.google.mlkit:acceleration:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\2f919cab3fc3b3758fd69b579b96d287\transformed\acceleration-16.0.0-beta1\AndroidManifest.xml:7:5-12:19
-MERGED from [androidx.work:work-multiprocess:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\f9e879066840441b4c414887dce2e2d0\transformed\work-multiprocess-2.7.0\AndroidManifest.xml:24:5-28:19
-MERGED from [androidx.work:work-multiprocess:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\f9e879066840441b4c414887dce2e2d0\transformed\work-multiprocess-2.7.0\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:10:5-18:19
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:10:5-18:19
-MERGED from [com.google.mlkit:object-detection-custom:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\1bdb1ba3cafbae53b077662ecfdd7514\transformed\object-detection-custom-17.0.0\AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:object-detection-custom:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\1bdb1ba3cafbae53b077662ecfdd7514\transformed\object-detection-custom-17.0.0\AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:image-labeling:17.0.7] C:\Users\arzka\.gradle\caches\transforms-3\cbcdea1e53faef98cca04e2fff6a0827\transformed\image-labeling-17.0.7\AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:image-labeling:17.0.7] C:\Users\arzka\.gradle\caches\transforms-3\cbcdea1e53faef98cca04e2fff6a0827\transformed\image-labeling-17.0.7\AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\b6836ce2f1b41ffe0e9ab939a55337bb\transformed\image-labeling-custom-17.0.1\AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\b6836ce2f1b41ffe0e9ab939a55337bb\transformed\image-labeling-custom-17.0.1\AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\arzka\.gradle\caches\transforms-3\b4e3842319fbd9a5aa6ad20dd67b8d12\transformed\segmentation-selfie-16.0.0-beta4\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\arzka\.gradle\caches\transforms-3\b4e3842319fbd9a5aa6ad20dd67b8d12\transformed\segmentation-selfie-16.0.0-beta4\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\8772953ad898a83597aba8a67d9f9e7a\transformed\face-mesh-detection-16.0.0-beta1\AndroidManifest.xml:7:5-15:19
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\8772953ad898a83597aba8a67d9f9e7a\transformed\face-mesh-detection-16.0.0-beta1\AndroidManifest.xml:7:5-15:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\ead91a225aa07d2e458c632c27c75cd9\transformed\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\ead91a225aa07d2e458c632c27c75cd9\transformed\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:23:5-88:19
+INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:23:5-88:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\arzka\.gradle\caches\transforms-3\3f7c35107b8c5d5d271f13af332d0280\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\arzka\.gradle\caches\transforms-3\3f7c35107b8c5d5d271f13af332d0280\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:10:5-18:19
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:10:5-18:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\9e30bbd526ce35f021cea5f634254893\transformed\play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\9e30bbd526ce35f021cea5f634254893\transformed\play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:8:5-16:19
@@ -356,28 +211,20 @@ MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\arzka\.
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\arzka\.gradle\caches\transforms-3\20c72ae4234059ac9d794997b7be759e\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\8b8f66adbd3b8925c5755789a42db741\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\8b8f66adbd3b8925c5755789a42db741\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
-MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:30:5-143:19
-MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:30:5-143:19
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:25:5-39:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:25:5-39:19
-MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\arzka\.gradle\caches\transforms-3\0ac598a68c97b0035b745dda3ba86614\transformed\room-runtime-2.2.5\AndroidManifest.xml:24:5-29:19
-MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\arzka\.gradle\caches\transforms-3\0ac598a68c97b0035b745dda3ba86614\transformed\room-runtime-2.2.5\AndroidManifest.xml:24:5-29:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\94bbe6277505127643584e304eedb3d0\transformed\lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\94bbe6277505127643584e304eedb3d0\transformed\lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
-MERGED from [androidx.core:core:1.6.0] C:\Users\arzka\.gradle\caches\transforms-3\d887537eab6d958679ebc309dbbff323\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.6.0] C:\Users\arzka\.gradle\caches\transforms-3\d887537eab6d958679ebc309dbbff323\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\arzka\.gradle\caches\transforms-3\03ba7436586890429c28a3b2810439c5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\arzka\.gradle\caches\transforms-3\03ba7436586890429c28a3b2810439c5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\e8596bb8a74b9c72d6598141d94a3d4e\transformed\startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\e8596bb8a74b9c72d6598141d94a3d4e\transformed\startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.core:core:1.3.1] C:\Users\arzka\.gradle\caches\transforms-3\540d0c806765a84261a58df822af3250\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] C:\Users\arzka\.gradle\caches\transforms-3\540d0c806765a84261a58df822af3250\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\90a0301b4794943bcf9722fa4f0a2d27\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\arzka\.gradle\caches\transforms-3\90a0301b4794943bcf9722fa4f0a2d27\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\c536dd12c7474e02a5baa7fadefe7938\transformed\image-1.0.0-beta1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\c536dd12c7474e02a5baa7fadefe7938\transformed\image-1.0.0-beta1\AndroidManifest.xml:7:5-20
 	android:extractNativeLibs
 		INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.6.0] C:\Users\arzka\.gradle\caches\transforms-3\d887537eab6d958679ebc309dbbff323\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.3.1] C:\Users\arzka\.gradle\caches\transforms-3\540d0c806765a84261a58df822af3250\transformed\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:26:9-41
 	android:icon
@@ -440,114 +287,30 @@ ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidM
 		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:63:13-44
 	android:name
 		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:61:13-60
-activity#com.google.mlkit.vision.demo.java.CameraXSourceDemoActivity
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:66:9-70:20
-	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:68:13-37
-	android:theme
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:69:13-44
-	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:67:13-59
 activity#com.google.mlkit.vision.demo.java.StillImageActivity
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:72:9-76:20
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:68:9-72:20
 	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:74:13-37
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:70:13-37
 	android:theme
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:75:13-44
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:71:13-44
 	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:73:13-52
-activity#com.google.mlkit.vision.demo.kotlin.ChooserActivity
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:78:9-81:20
-	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:80:13-37
-	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:79:13-51
-activity#com.google.mlkit.vision.demo.kotlin.LivePreviewActivity
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:83:9-87:20
-	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:85:13-37
-	android:theme
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:86:13-44
-	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:84:13-55
-activity#com.google.mlkit.vision.demo.kotlin.CameraXLivePreviewActivity
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:89:9-93:20
-	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:91:13-37
-	android:theme
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:92:13-44
-	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:90:13-62
-activity#com.google.mlkit.vision.demo.kotlin.CameraXSourceDemoActivity
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:95:9-99:20
-	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:97:13-37
-	android:theme
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:98:13-44
-	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:96:13-61
-activity#com.google.mlkit.vision.demo.kotlin.StillImageActivity
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:101:9-105:20
-	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:103:13-37
-	android:theme
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:104:13-44
-	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:102:13-54
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:69:13-52
 activity#com.google.mlkit.vision.demo.preference.SettingsActivity
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:107:9-109:39
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:84:9-86:39
 	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:109:13-37
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:86:13-37
 	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:108:13-56
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:85:13-56
 queries
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:112:5-116:15
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:89:5-93:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:113:9-115:18
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:90:9-92:18
 action#android.media.action.IMAGE_CAPTURE
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:114:13-73
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:91:13-73
 	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:114:21-70
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:7:5-79
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:7:5-79
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:7:5-79
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:7:5-79
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:7:5-79
-MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:26:5-79
-MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:26:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:22:5-79
-	android:name
-		ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:7:22-76
-uses-native-library
-ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:16:9-18:40
-	android:required
-		ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:18:13-37
-	android:name
-		ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:17:13-40
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\test2\app\src\main\AndroidManifest.xml:91:21-70
 service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
-ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:26:9-32:19
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:11:9-17:19
-MERGED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:11:9-17:19
-MERGED from [com.google.mlkit:object-detection-custom:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\1bdb1ba3cafbae53b077662ecfdd7514\transformed\object-detection-custom-17.0.0\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:object-detection-custom:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\1bdb1ba3cafbae53b077662ecfdd7514\transformed\object-detection-custom-17.0.0\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:image-labeling:17.0.7] C:\Users\arzka\.gradle\caches\transforms-3\cbcdea1e53faef98cca04e2fff6a0827\transformed\image-labeling-17.0.7\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:image-labeling:17.0.7] C:\Users\arzka\.gradle\caches\transforms-3\cbcdea1e53faef98cca04e2fff6a0827\transformed\image-labeling-17.0.7\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\b6836ce2f1b41ffe0e9ab939a55337bb\transformed\image-labeling-custom-17.0.1\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:image-labeling-custom:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\b6836ce2f1b41ffe0e9ab939a55337bb\transformed\image-labeling-custom-17.0.1\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\arzka\.gradle\caches\transforms-3\b4e3842319fbd9a5aa6ad20dd67b8d12\transformed\segmentation-selfie-16.0.0-beta4\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\arzka\.gradle\caches\transforms-3\b4e3842319fbd9a5aa6ad20dd67b8d12\transformed\segmentation-selfie-16.0.0-beta4\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\8772953ad898a83597aba8a67d9f9e7a\transformed\face-mesh-detection-16.0.0-beta1\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\8772953ad898a83597aba8a67d9f9e7a\transformed\face-mesh-detection-16.0.0-beta1\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:11:9-17:19
-MERGED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:11:9-17:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\9e30bbd526ce35f021cea5f634254893\transformed\play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\9e30bbd526ce35f021cea5f634254893\transformed\play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:9:9-15:19
+ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:9:9-15:19
@@ -555,87 +318,19 @@ MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\cache
 MERGED from [com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:15:9-23:19
 MERGED from [com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:15:9-23:19
 	android:exported
-		ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:28:13-37
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:11:13-37
 	tools:targetApi
 		ADDED from [com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:19:13-32
 	android:directBootAware
 		ADDED from [com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:17:13-43
 	android:name
-		ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:27:13-91
-meta-data#com.google.firebase.components:com.google.mlkit.vision.pose.internal.PoseRegistrar
-ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:29:13-31:85
-	android:value
-		ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:31:17-82
-	android:name
-		ADDED from [com.google.mlkit:pose-detection-common:18.0.0-beta3] C:\Users\arzka\.gradle\caches\transforms-3\257fd6176bcd018e8c7353c637e35af4\transformed\pose-detection-common-18.0.0-beta3\AndroidManifest.xml:30:17-114
-service#com.google.mlkit.acceleration.internal.MlKitRemoteWorkerService
-ADDED from [com.google.mlkit:acceleration:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\2f919cab3fc3b3758fd69b579b96d287\transformed\acceleration-16.0.0-beta1\AndroidManifest.xml:8:9-11:68
-	android:process
-		ADDED from [com.google.mlkit:acceleration:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\2f919cab3fc3b3758fd69b579b96d287\transformed\acceleration-16.0.0-beta1\AndroidManifest.xml:11:13-65
-	android:exported
-		ADDED from [com.google.mlkit:acceleration:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\2f919cab3fc3b3758fd69b579b96d287\transformed\acceleration-16.0.0-beta1\AndroidManifest.xml:10:13-37
-	android:name
-		ADDED from [com.google.mlkit:acceleration:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\2f919cab3fc3b3758fd69b579b96d287\transformed\acceleration-16.0.0-beta1\AndroidManifest.xml:9:13-91
-service#androidx.work.multiprocess.RemoteWorkManagerService
-ADDED from [androidx.work:work-multiprocess:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\f9e879066840441b4c414887dce2e2d0\transformed\work-multiprocess-2.7.0\AndroidManifest.xml:25:9-27:40
-	android:exported
-		ADDED from [androidx.work:work-multiprocess:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\f9e879066840441b4c414887dce2e2d0\transformed\work-multiprocess-2.7.0\AndroidManifest.xml:27:13-37
-	android:name
-		ADDED from [androidx.work:work-multiprocess:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\f9e879066840441b4c414887dce2e2d0\transformed\work-multiprocess-2.7.0\AndroidManifest.xml:26:13-79
-meta-data#com.google.firebase.components:com.google.mlkit.vision.objects.defaults.internal.DefaultObjectsRegistrar
-ADDED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:14:13-16:85
-	android:value
-		ADDED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:16:17-82
-	android:name
-		ADDED from [com.google.mlkit:object-detection:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\d972dc3c9e0b3de7698c5cba51a21e87\transformed\object-detection-17.0.0\AndroidManifest.xml:15:17-136
-meta-data#com.google.firebase.components:com.google.mlkit.vision.objects.custom.internal.CustomObjectsRegistrar
-ADDED from [com.google.mlkit:object-detection-custom:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\1bdb1ba3cafbae53b077662ecfdd7514\transformed\object-detection-custom-17.0.0\AndroidManifest.xml:11:13-13:85
-	android:value
-		ADDED from [com.google.mlkit:object-detection-custom:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\1bdb1ba3cafbae53b077662ecfdd7514\transformed\object-detection-custom-17.0.0\AndroidManifest.xml:13:17-82
-	android:name
-		ADDED from [com.google.mlkit:object-detection-custom:17.0.0] C:\Users\arzka\.gradle\caches\transforms-3\1bdb1ba3cafbae53b077662ecfdd7514\transformed\object-detection-custom-17.0.0\AndroidManifest.xml:12:17-133
-meta-data#com.google.firebase.components:com.google.mlkit.vision.label.defaults.internal.BundledLabelRegistrar
-ADDED from [com.google.mlkit:image-labeling:17.0.7] C:\Users\arzka\.gradle\caches\transforms-3\cbcdea1e53faef98cca04e2fff6a0827\transformed\image-labeling-17.0.7\AndroidManifest.xml:11:13-13:85
-	android:value
-		ADDED from [com.google.mlkit:image-labeling:17.0.7] C:\Users\arzka\.gradle\caches\transforms-3\cbcdea1e53faef98cca04e2fff6a0827\transformed\image-labeling-17.0.7\AndroidManifest.xml:13:17-82
-	android:name
-		ADDED from [com.google.mlkit:image-labeling:17.0.7] C:\Users\arzka\.gradle\caches\transforms-3\cbcdea1e53faef98cca04e2fff6a0827\transformed\image-labeling-17.0.7\AndroidManifest.xml:12:17-132
-meta-data#com.google.firebase.components:com.google.mlkit.vision.label.custom.internal.CustomLabelRegistrar
-ADDED from [com.google.mlkit:image-labeling-custom:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\b6836ce2f1b41ffe0e9ab939a55337bb\transformed\image-labeling-custom-17.0.1\AndroidManifest.xml:11:13-13:85
-	android:value
-		ADDED from [com.google.mlkit:image-labeling-custom:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\b6836ce2f1b41ffe0e9ab939a55337bb\transformed\image-labeling-custom-17.0.1\AndroidManifest.xml:13:17-82
-	android:name
-		ADDED from [com.google.mlkit:image-labeling-custom:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\b6836ce2f1b41ffe0e9ab939a55337bb\transformed\image-labeling-custom-17.0.1\AndroidManifest.xml:12:17-129
-meta-data#com.google.firebase.components:com.google.mlkit.vision.segmentation.internal.SegmentationRegistrar
-ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\arzka\.gradle\caches\transforms-3\b4e3842319fbd9a5aa6ad20dd67b8d12\transformed\segmentation-selfie-16.0.0-beta4\AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\arzka\.gradle\caches\transforms-3\b4e3842319fbd9a5aa6ad20dd67b8d12\transformed\segmentation-selfie-16.0.0-beta4\AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\arzka\.gradle\caches\transforms-3\b4e3842319fbd9a5aa6ad20dd67b8d12\transformed\segmentation-selfie-16.0.0-beta4\AndroidManifest.xml:13:17-130
-meta-data#com.google.firebase.components:com.google.mlkit.vision.facemesh.internal.FaceMeshRegistrar
-ADDED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\8772953ad898a83597aba8a67d9f9e7a\transformed\face-mesh-detection-16.0.0-beta1\AndroidManifest.xml:11:13-13:85
-	android:value
-		ADDED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\8772953ad898a83597aba8a67d9f9e7a\transformed\face-mesh-detection-16.0.0-beta1\AndroidManifest.xml:13:17-82
-	android:name
-		ADDED from [com.google.mlkit:face-mesh-detection:16.0.0-beta1] C:\Users\arzka\.gradle\caches\transforms-3\8772953ad898a83597aba8a67d9f9e7a\transformed\face-mesh-detection-16.0.0-beta1\AndroidManifest.xml:12:17-122
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:10:13-91
 meta-data#com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar
 ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:12:13-14:85
 	android:value
 		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:14:17-82
 	android:name
 		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:13:17-120
-meta-data#com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar
-ADDED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:14:13-16:85
-	android:value
-		ADDED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:16:17-82
-	android:name
-		ADDED from [com.google.mlkit:vision-internal-vkp:18.2.2] C:\Users\arzka\.gradle\caches\transforms-3\5fa8809ba3b3833d55a51885386706ff\transformed\vision-internal-vkp-18.2.2\AndroidManifest.xml:15:17-103
-meta-data#com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar
-ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\9e30bbd526ce35f021cea5f634254893\transformed\play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\9e30bbd526ce35f021cea5f634254893\transformed\play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\arzka\.gradle\caches\transforms-3\9e30bbd526ce35f021cea5f634254893\transformed\play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:13:17-114
 meta-data#com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar
 ADDED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:12:13-14:85
 	android:value
@@ -672,234 +367,12 @@ ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gr
 		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:25:5-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:25:22-65
-uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:27:5-81
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:27:22-78
-uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:28:5-77
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:28:22-74
-provider#androidx.startup.InitializationProvider
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:31:9-39:20
-MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\e8596bb8a74b9c72d6598141d94a3d4e\transformed\startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\arzka\.gradle\caches\transforms-3\e8596bb8a74b9c72d6598141d94a3d4e\transformed\startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
-	tools:node
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:35:13-31
-	android:authorities
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:33:13-68
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:34:13-37
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:32:13-67
-meta-data#androidx.work.WorkManagerInitializer
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:36:13-38:52
-	android:value
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:38:17-49
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:37:17-68
-service#androidx.work.impl.background.systemalarm.SystemAlarmService
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:41:9-46:35
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:44:13-72
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:45:13-37
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:46:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:43:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:42:13-88
-service#androidx.work.impl.background.systemjob.SystemJobService
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:47:9-53:35
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:50:13-70
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:51:13-36
-	android:permission
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:52:13-69
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:53:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:49:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:48:13-84
-service#androidx.work.impl.foreground.SystemForegroundService
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:54:9-59:35
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:57:13-77
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:58:13-37
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:59:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:56:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:55:13-81
-receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:61:9-66:35
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:64:13-35
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:65:13-37
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:66:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:63:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:62:13-88
-receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:67:9-77:20
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:70:13-36
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:71:13-37
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:72:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:69:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:68:13-106
-intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:73:13-76:29
-action#android.intent.action.ACTION_POWER_CONNECTED
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:74:17-87
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:74:25-84
-action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:75:17-90
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:75:25-87
-receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:78:9-88:20
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:81:13-36
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:82:13-37
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:83:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:80:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:79:13-104
-intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:84:13-87:29
-action#android.intent.action.BATTERY_OKAY
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:85:17-77
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:85:25-74
-action#android.intent.action.BATTERY_LOW
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:86:17-76
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:86:25-73
-receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:89:9-99:20
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:92:13-36
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:93:13-37
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:94:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:91:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:90:13-104
-intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:95:13-98:29
-action#android.intent.action.DEVICE_STORAGE_LOW
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:96:17-83
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:96:25-80
-action#android.intent.action.DEVICE_STORAGE_OK
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:97:17-82
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:97:25-79
-receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:100:9-109:20
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:103:13-36
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:104:13-37
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:105:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:102:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:101:13-103
-intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:106:13-108:29
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:107:17-79
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:107:25-76
-receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:110:9-121:20
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:113:13-36
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:114:13-37
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:115:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:112:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:111:13-88
-intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:116:13-120:29
-action#android.intent.action.BOOT_COMPLETED
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:117:17-79
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:117:25-76
-action#android.intent.action.TIME_SET
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:118:17-73
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:118:25-70
-action#android.intent.action.TIMEZONE_CHANGED
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:119:17-81
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:119:25-78
-receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:122:9-131:20
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:125:13-72
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:126:13-37
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:127:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:124:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:123:13-99
-intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:128:13-130:29
-action#androidx.work.impl.background.systemalarm.UpdateProxies
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:129:17-98
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:129:25-95
-receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:132:9-142:20
-	android:enabled
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:135:13-35
-	android:exported
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:136:13-36
-	android:permission
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:137:13-57
-	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:138:13-32
-	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:134:13-44
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:133:13-78
-intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:139:13-141:29
-action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
-ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:140:17-88
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\arzka\.gradle\caches\transforms-3\c7459d9ff4d1afc2253e1861276b1de1\transformed\work-runtime-2.7.0\AndroidManifest.xml:140:25-85
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:22-76
 service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
 ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:36:9-38:40
@@ -928,21 +401,3 @@ ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\a
 		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
 	android:name
 		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
-service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.2.5] C:\Users\arzka\.gradle\caches\transforms-3\0ac598a68c97b0035b745dda3ba86614\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
-	android:exported
-		ADDED from [androidx.room:room-runtime:2.2.5] C:\Users\arzka\.gradle\caches\transforms-3\0ac598a68c97b0035b745dda3ba86614\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
-	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.2.5] C:\Users\arzka\.gradle\caches\transforms-3\0ac598a68c97b0035b745dda3ba86614\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
-	android:name
-		ADDED from [androidx.room:room-runtime:2.2.5] C:\Users\arzka\.gradle\caches\transforms-3\0ac598a68c97b0035b745dda3ba86614\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
-provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\94bbe6277505127643584e304eedb3d0\transformed\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\94bbe6277505127643584e304eedb3d0\transformed\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-	android:multiprocess
-		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\94bbe6277505127643584e304eedb3d0\transformed\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\94bbe6277505127643584e304eedb3d0\transformed\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\arzka\.gradle\caches\transforms-3\94bbe6277505127643584e304eedb3d0\transformed\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
