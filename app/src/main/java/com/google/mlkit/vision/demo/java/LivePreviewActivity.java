@@ -30,6 +30,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 import com.google.android.gms.common.annotation.KeepName;
+import com.google.mlkit.common.model.LocalModel;
 import com.google.mlkit.vision.barcode.ZoomSuggestionOptions.ZoomCallback;
 import com.google.mlkit.vision.demo.CameraSource;
 import com.google.mlkit.vision.demo.CameraSourcePreview;
@@ -55,13 +56,22 @@ import java.util.List;
 public final class LivePreviewActivity extends AppCompatActivity
     implements OnItemSelectedListener, CompoundButton.OnCheckedChangeListener {
   private static final String OBJECT_DETECTION = "Object Detection";
-
+  private static final String OBJECT_DETECTION_CUSTOM = "Custom Object Detection";
+  private static final String CUSTOM_AUTOML_OBJECT_DETECTION =
+      "Custom AutoML Object Detection (Flower)";
+  private static final String FACE_DETECTION = "Face Detection";
   private static final String BARCODE_SCANNING = "Barcode Scanning";
+  private static final String IMAGE_LABELING = "Image Labeling";
+  private static final String IMAGE_LABELING_CUSTOM = "Custom Image Labeling (Birds)";
+  private static final String CUSTOM_AUTOML_LABELING = "Custom AutoML Image Labeling (Flower)";
+  private static final String POSE_DETECTION = "Pose Detection";
+  private static final String SELFIE_SEGMENTATION = "Selfie Segmentation";
   private static final String TEXT_RECOGNITION_LATIN = "Text Recognition Latin";
   private static final String TEXT_RECOGNITION_CHINESE = "Text Recognition Chinese";
   private static final String TEXT_RECOGNITION_DEVANAGARI = "Text Recognition Devanagari";
   private static final String TEXT_RECOGNITION_JAPANESE = "Text Recognition Japanese";
   private static final String TEXT_RECOGNITION_KOREAN = "Text Recognition Korean";
+  private static final String FACE_MESH_DETECTION = "Face Mesh Detection (Beta)";
 
   private static final String TAG = "LivePreviewActivity";
 
@@ -96,6 +106,7 @@ public final class LivePreviewActivity extends AppCompatActivity
     options.add(TEXT_RECOGNITION_DEVANAGARI);
     options.add(TEXT_RECOGNITION_JAPANESE);
     options.add(TEXT_RECOGNITION_KOREAN);
+    options.add(FACE_MESH_DETECTION);
 
     // Creating adapter for spinner
     ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this, R.layout.spinner_style, options);
