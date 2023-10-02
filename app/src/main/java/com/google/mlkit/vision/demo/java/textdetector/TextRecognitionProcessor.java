@@ -78,6 +78,12 @@ public class TextRecognitionProcessor extends VisionProcessorBase<Text> {
 
   private static void logExtrasForTesting(Text text) {
     if (text != null) {
+
+      //luodaan muuttuja tunnistetusta tekstistä
+      String muuttuja = text.getText();
+      //Kirjoitetaan muuttuja lokiin (Logcat)
+      Log.i(MANUAL_TESTING_LOG,"TaTATATTATATATATTATATATATTATATATAT\n"+ muuttuja);
+
       Log.v(MANUAL_TESTING_LOG, "Detected text has : " + text.getTextBlocks().size() + " blocks");
       for (int i = 0; i < text.getTextBlocks().size(); ++i) {
         List<Line> lines = text.getTextBlocks().get(i).getLines();
