@@ -34,12 +34,12 @@
 23-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:21:22-62
 24
 25    <queries>
-25-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:89:5-93:15
+25-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:85:5-89:15
 26        <intent>
-26-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:90:9-92:18
+26-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:86:9-88:18
 27            <action android:name="android.media.action.IMAGE_CAPTURE" />
-27-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:91:13-73
-27-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:91:21-70
+27-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:87:13-73
+27-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:87:21-70
 28        </intent>
 29    </queries>
 30
@@ -50,7 +50,7 @@
 33-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:22-76
 34
 35    <application
-35-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:23:5-88:19
+35-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:23:5-84:19
 36        android:name="androidx.multidex.MultiDexApplication"
 36-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:24:9-61
 37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -118,113 +118,104 @@
 73-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:57:13-44
 74        </activity>
 75        <activity
-75-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:60:9-64:20
-76            android:name="com.google.mlkit.vision.demo.java.CameraXLivePreviewActivity"
-76-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:61:13-60
+75-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:64:9-68:20
+76            android:name="com.google.mlkit.vision.demo.java.StillImageActivity"
+76-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:65:13-52
 77            android:exported="false"
-77-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:62:13-37
+77-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:66:13-37
 78            android:theme="@style/AppTheme" >
-78-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:63:13-44
+78-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:67:13-44
 79        </activity>
 80        <activity
-80-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:68:9-72:20
-81            android:name="com.google.mlkit.vision.demo.java.StillImageActivity"
-81-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:69:13-52
-82            android:exported="false"
-82-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:70:13-37
-83            android:theme="@style/AppTheme" >
-83-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:71:13-44
-84        </activity>
-85        <activity
-85-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:84:9-86:39
-86            android:name="com.google.mlkit.vision.demo.preference.SettingsActivity"
-86-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:85:13-56
-87            android:exported="false" />
-87-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:86:13-37
-88
-89        <service
-89-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
-90            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-90-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:10:13-91
-91            android:directBootAware="true"
-91-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:17:13-43
-92            android:exported="false" >
-92-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:11:13-37
-93            <meta-data
-93-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:12:13-14:85
-94                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
-94-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:13:17-120
-95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:14:17-82
-96            <meta-data
-96-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:12:13-14:85
-97                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
-97-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:13:17-114
-98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:14:17-82
-99            <meta-data
-99-->[com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
-100                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-100-->[com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:13:17-124
-101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:14:17-82
-102            <meta-data
-102-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:20:13-22:85
-103                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-103-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:21:17-120
-104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:22:17-82
-105        </service>
-106
-107        <provider
-107-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:9:9-13:38
-108            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-108-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:10:13-78
-109            android:authorities="com.google.mlkit.vision.demo.mlkitinitprovider"
-109-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:11:13-69
+80-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:80:9-82:39
+81            android:name="com.google.mlkit.vision.demo.preference.SettingsActivity"
+81-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:81:13-56
+82            android:exported="false" />
+82-->C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:82:13-37
+83
+84        <service
+84-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
+85            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+85-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:10:13-91
+86            android:directBootAware="true"
+86-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:17:13-43
+87            android:exported="false" >
+87-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:11:13-37
+88            <meta-data
+88-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:12:13-14:85
+89                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+89-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:13:17-120
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\3e107808efcba1fd7a39ffd6a4f3c067\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:14:17-82
+91            <meta-data
+91-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:12:13-14:85
+92                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+92-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:13:17-114
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\55ea86f4c78bc98f27ef78709e9ac6da\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:14:17-82
+94            <meta-data
+94-->[com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+95                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+95-->[com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:13:17-124
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.mlkit:vision-common:17.3.0] C:\Users\arzka\.gradle\caches\transforms-3\c826456fa1dc58b7f7d165ccdebbd613\transformed\vision-common-17.3.0\AndroidManifest.xml:14:17-82
+97            <meta-data
+97-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:20:13-22:85
+98                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+98-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:21:17-120
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:22:17-82
+100        </service>
+101
+102        <provider
+102-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:9:9-13:38
+103            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+103-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:10:13-78
+104            android:authorities="com.google.mlkit.vision.demo.mlkitinitprovider"
+104-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:11:13-69
+105            android:exported="false"
+105-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:12:13-37
+106            android:initOrder="99" />
+106-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:13:13-35
+107
+108        <activity
+108-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+109            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+109-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
 110            android:exported="false"
-110-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:12:13-37
-111            android:initOrder="99" />
-111-->[com.google.mlkit:common:18.9.0] C:\Users\arzka\.gradle\caches\transforms-3\a58298e9a3a59de1dab37bb4b535a2aa\transformed\common-18.9.0\AndroidManifest.xml:13:13-35
+110-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+111-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 112
-113        <activity
-113-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-114            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-114-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-115            android:exported="false"
-115-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-116-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\arzka\.gradle\caches\transforms-3\5d1ccff272850164a1b87929f83ef57f\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-117
-118        <service
-118-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
-119            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-119-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
-120            android:exported="false" >
-120-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
-121            <meta-data
-121-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
-122                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-122-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
-123                android:value="cct" />
-123-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+113        <service
+113-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+114            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+114-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+115            android:exported="false" >
+115-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+116            <meta-data
+116-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+117                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+117-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+118                android:value="cct" />
+118-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\arzka\.gradle\caches\transforms-3\e17fc95fecb1e2c76b045f53003ae879\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+119        </service>
+120        <service
+120-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+121            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+121-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+122            android:exported="false"
+122-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+123            android:permission="android.permission.BIND_JOB_SERVICE" >
+123-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
 124        </service>
-125        <service
-125-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
-126            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-126-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
-127            android:exported="false"
-127-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
-128            android:permission="android.permission.BIND_JOB_SERVICE" >
-128-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
-129        </service>
+125
+126        <receiver
+126-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+127            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+127-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+128            android:exported="false" />
+128-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+129    </application>
 130
-131        <receiver
-131-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
-132            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-132-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
-133            android:exported="false" />
-133-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\arzka\.gradle\caches\transforms-3\7a963d3e55500bcdeb974254f628d5c4\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
-134    </application>
-135
-136</manifest>
+131</manifest>

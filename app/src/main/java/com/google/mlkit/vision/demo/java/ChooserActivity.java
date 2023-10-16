@@ -48,7 +48,6 @@ public final class ChooserActivity extends AppCompatActivity
           : new Class<?>[] {
             LivePreviewActivity.class,
             StillImageActivity.class,
-            CameraXLivePreviewActivity.class,
 
           };
 
