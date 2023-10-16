@@ -61,7 +61,6 @@ public final class StillImageActivity extends AppCompatActivity {
 
   private static final String TAG = "StillImageActivity";
 
-  private static final String OBJECT_DETECTION = "Object Detection";
   private static final String BARCODE_SCANNING = "Barcode Scanning";
   private static final String TEXT_RECOGNITION_LATIN = "Text Recognition Latin";
 
@@ -78,7 +77,7 @@ public final class StillImageActivity extends AppCompatActivity {
 
   private ImageView preview;
   private GraphicOverlay graphicOverlay;
-  private String selectedMode = OBJECT_DETECTION;
+  private String selectedMode = TEXT_RECOGNITION_LATIN;
   private String selectedSize = SIZE_SCREEN;
 
   boolean isLandScape;

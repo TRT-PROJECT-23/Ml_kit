@@ -70,7 +70,6 @@ public final class CameraXLivePreviewActivity extends AppCompatActivity
     implements OnItemSelectedListener, CompoundButton.OnCheckedChangeListener {
   private static final String TAG = "CameraXLivePreview";
 
-  private static final String OBJECT_DETECTION = "Object Detection";
   private static final String BARCODE_SCANNING = "Barcode Scanning";
   private static final String TEXT_RECOGNITION_LATIN = "Text Recognition Latin";
 
@@ -86,7 +85,7 @@ public final class CameraXLivePreviewActivity extends AppCompatActivity
   @Nullable private VisionImageProcessor imageProcessor;
   private boolean needUpdateGraphicOverlayImageSourceInfo;
 
-  private String selectedModel = OBJECT_DETECTION;
+  private String selectedModel = TEXT_RECOGNITION_LATIN;
   private int lensFacing = CameraSelector.LENS_FACING_BACK;
   private CameraSelector cameraSelector;
 
@@ -96,7 +95,7 @@ public final class CameraXLivePreviewActivity extends AppCompatActivity
     Log.d(TAG, "onCreate");
 
     if (savedInstanceState != null) {
-      selectedModel = savedInstanceState.getString(STATE_SELECTED_MODEL, OBJECT_DETECTION);
+      selectedModel = savedInstanceState.getString(STATE_SELECTED_MODEL, TEXT_RECOGNITION_LATIN);
     }
     cameraSelector = new CameraSelector.Builder().requireLensFacing(lensFacing).build();
 
