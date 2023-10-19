@@ -37,6 +37,7 @@ id size_selector
 id spinner
 id take_photo_using_camera
 id test_activity_list_view
+id text0
 layout activity_chooser
 layout activity_settings
 layout activity_still_image

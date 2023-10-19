@@ -1125,6 +1125,7 @@ int id tag_unhandled_key_listeners 0x7f070103
 int id take_photo_using_camera 0x7f070104
 int id test_activity_list_view 0x7f070105
 int id text 0x7f070106
+int id text0 0x7f07011f
 int id text2 0x7f070107
 int id textSpacerNoButtons 0x7f070108
 int id textSpacerNoTitle 0x7f070109

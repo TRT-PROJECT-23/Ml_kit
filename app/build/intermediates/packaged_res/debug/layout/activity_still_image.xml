@@ -29,7 +29,7 @@
   <LinearLayout
       android:id="@id/control"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="300dp"
       app:layout_constraintBottom_toBottomOf="parent"
       android:background="#000"
       android:orientation="vertical">
@@ -41,6 +41,18 @@
         android:layout_gravity="center"
         android:layout_margin="12dp"
         android:text="@string/select_image"/>
+
+    <TextView
+        android:id="@+id/text0"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textColor="@color/white"
+        android:text="Result"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:id="@+id/control2"
@@ -54,15 +66,15 @@
           android:id="@+id/size_selector"
           android:layout_width="0dp"
           android:layout_weight="1"
-          android:layout_height="wrap_content"
-          android:layout_gravity="center"/>
+          android:layout_height="48dp"
+          />
 
       <Spinner
           android:id="@+id/feature_selector"
           android:layout_width="0dp"
           android:layout_weight="1"
-          android:layout_height="wrap_content"
-          android:layout_gravity="center"/>
+          android:layout_height="48dp"
+          />
     </LinearLayout>
   </LinearLayout>
 
