@@ -16,10 +16,13 @@
 
 package com.google.mlkit.vision.demo.java.textdetector;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Point;
 import android.util.Log;
 import android.widget.TextView;
+
+import com.google.mlkit.vision.demo.R;
 
 import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.Task;
@@ -45,10 +48,12 @@ public class TextRecognitionProcessor extends VisionProcessorBase<Text> {
   private final Boolean showLanguageTag;
   private final boolean showConfidence;
   private TextView result0;
+  private Context context;
 
   public TextRecognitionProcessor(
       Context context, TextRecognizerOptionsInterface textRecognizerOptions) {
     super(context);
+    this.context = context;
     shouldGroupRecognizedTextInBlocks = PreferenceUtils.shouldGroupRecognizedTextInBlocks(context);
     showLanguageTag = PreferenceUtils.showLanguageTag(context);
     showConfidence = PreferenceUtils.shouldShowTextConfidence(context);
@@ -70,18 +75,24 @@ public class TextRecognitionProcessor extends VisionProcessorBase<Text> {
   protected void onSuccess(@NonNull Text text, @NonNull GraphicOverlay graphicOverlay) {
     Log.d(TAG, "On-device Text detection successful");
 
-    //result0.setText(text.getText());
-    //Log.d(TAG, result0.toString());
+    // Access the TextView by its ID
+    result0 = ((Activity) context).findViewById(R.id.text0);
+
+    if (result0 != null) {
+      // Update the TextView with the recognized text
+      result0.setText(text.getText());
+    }
 
     logExtrasForTesting(text);
     graphicOverlay.add(
-        new TextGraphic(
-            graphicOverlay,
-            text,
-            shouldGroupRecognizedTextInBlocks,
-            showLanguageTag,
-            showConfidence));
+            new TextGraphic(
+                    graphicOverlay,
+                    text,
+                    shouldGroupRecognizedTextInBlocks,
+                    showLanguageTag,
+                    showConfidence));
   }
+
 
   private static void logExtrasForTesting(Text text) {
     if (text != null) {

@@ -106,6 +106,7 @@ string pref_title_rear_camera_preview_size
 string pref_title_segmentation_raw_size_mask
 string pref_title_show_language_tag
 string pref_title_show_text_confidence
+string result0
 string select_image
 string start_over
 string toggle_turn_off
