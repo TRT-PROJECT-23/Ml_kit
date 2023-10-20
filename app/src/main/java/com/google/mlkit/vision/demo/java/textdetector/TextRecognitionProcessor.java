@@ -19,6 +19,8 @@ package com.google.mlkit.vision.demo.java.textdetector;
 import android.content.Context;
 import android.graphics.Point;
 import android.util.Log;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.Task;
 import com.google.mlkit.vision.common.InputImage;
@@ -42,6 +44,7 @@ public class TextRecognitionProcessor extends VisionProcessorBase<Text> {
   private final Boolean shouldGroupRecognizedTextInBlocks;
   private final Boolean showLanguageTag;
   private final boolean showConfidence;
+  private TextView result0;
 
   public TextRecognitionProcessor(
       Context context, TextRecognizerOptionsInterface textRecognizerOptions) {
@@ -66,6 +69,10 @@ public class TextRecognitionProcessor extends VisionProcessorBase<Text> {
   @Override
   protected void onSuccess(@NonNull Text text, @NonNull GraphicOverlay graphicOverlay) {
     Log.d(TAG, "On-device Text detection successful");
+
+    //result0.setText(text.getText());
+    //Log.d(TAG, result0.toString());
+
     logExtrasForTesting(text);
     graphicOverlay.add(
         new TextGraphic(
