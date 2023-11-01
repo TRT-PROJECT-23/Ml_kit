@@ -64,6 +64,12 @@
             android:theme="@style/AppTheme">
         </activity>
 
+        <activity
+            android:name=".CodeScanner"
+            android:exported="false"
+            android:theme="@style/AppTheme">
+        </activity>
+
 
 
 

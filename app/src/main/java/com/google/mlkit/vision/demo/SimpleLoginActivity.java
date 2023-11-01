@@ -30,7 +30,7 @@ public class SimpleLoginActivity extends AppCompatActivity {
     }
 
     private void navigateToChooserActivity() {
-        Intent intent = new Intent(this, EntryChoiceActivity.class);
+        Intent intent = new Intent(this, CodeScanner.class);
         startActivity(intent);
     }
 }
