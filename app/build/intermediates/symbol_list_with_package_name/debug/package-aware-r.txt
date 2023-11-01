@@ -948,6 +948,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id buttonLogin
 id buttonPanel
 id cache_measures
 id center
@@ -1213,6 +1214,7 @@ layout settings_style
 layout spinner_style
 layout support_simple_spinner_dropdown_item
 layout toggle_style
+layout valid_ui
 menu camera_button_menu
 mipmap ic_launcher
 string abc_action_bar_home_description

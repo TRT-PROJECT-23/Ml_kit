@@ -18,6 +18,7 @@ drawable ic_switch_camera_white_48dp
 drawable ic_switch_camera_white_48dp_inset
 drawable list_item_background
 drawable logo_mlkit
+id buttonLogin
 id control
 id control2
 id detector
@@ -48,6 +49,7 @@ layout activity_vision_live_preview
 layout settings_style
 layout spinner_style
 layout toggle_style
+layout valid_ui
 menu camera_button_menu
 mipmap ic_launcher
 string app_name

@@ -54,7 +54,7 @@
             android:value="barcode,face,ocr,ocr_chinese,ocr_devanagari,ocr_japanese,ocr_korean,ica,custom_ica" />
 
         <activity
-            android:name="com.google.mlkit.vision.demo.EntryChoiceActivity"
+            android:name="com.google.mlkit.vision.demo.SimpleLoginActivity"
             android:exported="true"
             android:theme="@style/AppTheme" >
             <intent-filter>
@@ -62,6 +62,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.mlkit.vision.demo.EntryChoiceActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" >
         </activity>
         <activity
             android:name="com.google.mlkit.vision.demo.java.ChooserActivity"

@@ -37,13 +37,20 @@
             android:value="barcode,face,ocr,ocr_chinese,ocr_devanagari,ocr_japanese,ocr_korean,ica,custom_ica"/>
 
         <activity
-            android:name=".EntryChoiceActivity"
+            android:name=".SimpleLoginActivity"
             android:exported="true"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".EntryChoiceActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme">
+
         </activity>
 
         <activity
