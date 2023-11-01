@@ -16,9 +16,12 @@
 
 package com.google.mlkit.vision.demo.java.barcodescanner;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Point;
 import android.util.Log;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import com.google.android.gms.tasks.Task;
@@ -30,6 +33,7 @@ import com.google.mlkit.vision.barcode.ZoomSuggestionOptions.ZoomCallback;
 import com.google.mlkit.vision.barcode.common.Barcode;
 import com.google.mlkit.vision.common.InputImage;
 import com.google.mlkit.vision.demo.GraphicOverlay;
+import com.google.mlkit.vision.demo.R;
 import com.google.mlkit.vision.demo.java.VisionProcessorBase;
 import java.util.List;
 
@@ -39,9 +43,12 @@ public class BarcodeScannerProcessor extends VisionProcessorBase<List<Barcode>> 
   private static final String TAG = "BarcodeProcessor";
 
   private final BarcodeScanner barcodeScanner;
+  private TextView result1;
+  private Context context;
 
   public BarcodeScannerProcessor(Context context, @Nullable ZoomCallback zoomCallback) {
     super(context);
+    this.context = context;
     // Note that if you know which format of barcode your app is dealing with, detection will be
     // faster to specify the supported barcode formats one by one, e.g.
     // new BarcodeScannerOptions.Builder()
@@ -79,6 +86,13 @@ public class BarcodeScannerProcessor extends VisionProcessorBase<List<Barcode>> 
       Barcode barcode = barcodes.get(i);
       graphicOverlay.add(new BarcodeGraphic(graphicOverlay, barcode));
       logExtrasForTesting(barcode);
+
+      result1 = ((Activity) context).findViewById(R.id.text1);
+      TextView result1 = ((Activity) context).findViewById(R.id.text1);
+
+      if (result1 != null) {
+        result1.setText(barcode.getDisplayValue());
+      }
     }
   }
 

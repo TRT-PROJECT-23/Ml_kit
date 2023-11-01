@@ -57,7 +57,6 @@ public final class CodeScanner extends AppCompatActivity {
   private static final String TAG = "StillImageActivity";
 
   private static final String BARCODE_SCANNING = "Barcode Scanning";
-  private static final String TEXT_RECOGNITION_LATIN = "Text Recognition Latin";
 
   private static final String SIZE_SCREEN = "w:screen"; // Match screen width
   private static final String SIZE_1024_768 = "w:1024"; // ~1024*768 in a normal ratio
@@ -72,7 +71,7 @@ public final class CodeScanner extends AppCompatActivity {
 
   private ImageView preview;
   private GraphicOverlay graphicOverlay;
-  private String selectedMode = TEXT_RECOGNITION_LATIN;
+  private String selectedMode = BARCODE_SCANNING;
   private String selectedSize = SIZE_SCREEN;
 
   boolean isLandScape;
@@ -86,7 +85,7 @@ public final class CodeScanner extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    setContentView(R.layout.activity_still_image);
+    setContentView(R.layout.code_scanner);
 
     findViewById(R.id.select_image_button)
         .setOnClickListener(
@@ -179,7 +178,6 @@ public final class CodeScanner extends AppCompatActivity {
 
     options.add(BARCODE_SCANNING);
 
-    options.add(TEXT_RECOGNITION_LATIN);
 
 
     // Creating adapter for featureSpinner
@@ -367,13 +365,6 @@ public final class CodeScanner extends AppCompatActivity {
         case BARCODE_SCANNING:
           imageProcessor = new BarcodeScannerProcessor(this, /* zoomCallback= */ null);
           break;
-        case TEXT_RECOGNITION_LATIN:
-          if (imageProcessor != null) {
-            imageProcessor.stop();
-          }
-          imageProcessor =
-              new TextRecognitionProcessor(this, new TextRecognizerOptions.Builder().build());
-          break;
 
 
 
@@ -395,4 +386,13 @@ public final class CodeScanner extends AppCompatActivity {
           .show();
     }
   }
+
+  public void onNextButtonClick(View view) {
+    // Add the code to navigate to the next view here
+    // For example, you can start a new activity or fragment.
+    // Replace NextActivity.class with the appropriate destination.
+    Intent intent = new Intent(this, EntryChoiceActivity.class);
+    startActivity(intent);
+  }
+
 }

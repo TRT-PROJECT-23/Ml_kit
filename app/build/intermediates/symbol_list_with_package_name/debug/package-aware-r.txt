@@ -1042,6 +1042,7 @@ id mixed
 id motion_base
 id multiply
 id never
+id next_button
 id none
 id normal
 id notification_background
@@ -1128,6 +1129,7 @@ id take_photo_using_camera
 id test_activity_list_view
 id text
 id text0
+id text1
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
@@ -1200,6 +1202,7 @@ layout activity_vision_camerax_live_preview
 layout activity_vision_cameraxsource_demo
 layout activity_vision_entry_choice
 layout activity_vision_live_preview
+layout code_scanner
 layout custom_dialog
 layout notification_action
 layout notification_action_tombstone
@@ -1320,6 +1323,7 @@ string pref_title_segmentation_raw_size_mask
 string pref_title_show_language_tag
 string pref_title_show_text_confidence
 string result0
+string result1
 string search_menu_title
 string select_image
 string start_over
