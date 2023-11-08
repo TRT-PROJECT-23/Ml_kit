@@ -61,7 +61,6 @@ public final class StillImageActivity extends AppCompatActivity {
 
   private static final String TAG = "StillImageActivity";
 
-  private static final String BARCODE_SCANNING = "Barcode Scanning";
   private static final String TEXT_RECOGNITION_LATIN = "Text Recognition Latin";
 
   private static final String SIZE_SCREEN = "w:screen"; // Match screen width
@@ -182,7 +181,6 @@ public final class StillImageActivity extends AppCompatActivity {
     Spinner featureSpinner = findViewById(R.id.feature_selector);
     List<String> options = new ArrayList<>();
 
-    options.add(BARCODE_SCANNING);
 
     options.add(TEXT_RECOGNITION_LATIN);
 
@@ -369,9 +367,7 @@ public final class StillImageActivity extends AppCompatActivity {
       switch (selectedMode) {
 
 
-        case BARCODE_SCANNING:
-          imageProcessor = new BarcodeScannerProcessor(this, /* zoomCallback= */ null);
-          break;
+
         case TEXT_RECOGNITION_LATIN:
           if (imageProcessor != null) {
             imageProcessor.stop();

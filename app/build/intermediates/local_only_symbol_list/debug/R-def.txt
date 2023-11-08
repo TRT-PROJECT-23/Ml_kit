@@ -27,6 +27,7 @@ id feature_selector
 id graphic_overlay
 id imageView
 id java_entry_point
+id next_button
 id preview
 id preview_view
 id root
@@ -39,6 +40,7 @@ id spinner
 id take_photo_using_camera
 id test_activity_list_view
 id text0
+id text1
 layout activity_chooser
 layout activity_settings
 layout activity_still_image
@@ -46,6 +48,7 @@ layout activity_vision_camerax_live_preview
 layout activity_vision_cameraxsource_demo
 layout activity_vision_entry_choice
 layout activity_vision_live_preview
+layout code_scanner
 layout settings_style
 layout spinner_style
 layout toggle_style
@@ -109,6 +112,7 @@ string pref_title_segmentation_raw_size_mask
 string pref_title_show_language_tag
 string pref_title_show_text_confidence
 string result0
+string result1
 string select_image
 string start_over
 string toggle_turn_off
