@@ -20,7 +20,7 @@
     <string name="desc_cameraxsource_demo_activity" translatable="false">Object detection with custom classifier using ML Kit CameraXSource API. Note that CameraX is only supported on API 21+</string>
     <string name="desc_still_image_activity" translatable="false">Vision detectors demo with a still image</string>
     <string name="download_error" translatable="false">Download error</string>
-    <string name="java_entry_title" translatable="false">Something very smart to indicate what will happen</string>
+    <string name="java_entry_title" translatable="false">Tähän joku kiva teksti</string>
     <string name="low_storage_error" translatable="false">Face detector dependencies cannot be downloaded due to low device storage</string>
     <string name="menu_item_settings" translatable="false">Settings</string>
     <string name="no_camera_permission" translatable="false">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
