@@ -962,7 +962,6 @@ id collapseActionView
 id content
 id contentPanel
 id control
-id control2
 id cos
 id custom
 id customPanel
@@ -994,7 +993,6 @@ id end
 id expand_activities_button
 id expanded_menu
 id facing_switch
-id feature_selector
 id fillCenter
 id fillEnd
 id fillStart
@@ -1096,7 +1094,6 @@ id showCustom
 id showHome
 id showTitle
 id sin
-id size_selector
 id spacer
 id spinner
 id spline

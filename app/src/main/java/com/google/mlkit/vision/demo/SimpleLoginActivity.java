@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.mlkit.vision.demo.EntryChoiceActivity;
 import com.google.mlkit.vision.demo.R;
 
 public class SimpleLoginActivity extends AppCompatActivity {

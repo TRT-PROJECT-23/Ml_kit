@@ -20,10 +20,8 @@ drawable list_item_background
 drawable logo_mlkit
 id buttonLogin
 id control
-id control2
 id detector
 id facing_switch
-id feature_selector
 id graphic_overlay
 id imageView
 id java_entry_point
@@ -35,7 +33,6 @@ id select_image_button
 id select_images_from_local
 id settings_button
 id settings_container
-id size_selector
 id spinner
 id take_photo_using_camera
 id test_activity_list_view
