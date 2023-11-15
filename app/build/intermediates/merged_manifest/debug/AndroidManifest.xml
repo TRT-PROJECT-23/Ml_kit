@@ -64,11 +64,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mlkit.vision.demo.EntryChoiceActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme" >
-        </activity>
-        <activity
             android:name="com.google.mlkit.vision.demo.java.ChooserActivity"
             android:exported="false" >
         </activity>

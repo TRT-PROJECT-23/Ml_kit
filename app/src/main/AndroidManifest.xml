@@ -46,12 +46,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".EntryChoiceActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme">
-
-        </activity>
 
         <activity
             android:name=".java.ChooserActivity"
