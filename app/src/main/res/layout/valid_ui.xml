@@ -1,16 +1,17 @@
 <!-- res/layout/activity_simple_login.xml -->
-
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/diagonal_lines_background">
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Login" />
+        android:layout_alignParentBottom="true"
+    android:layout_marginBottom="32dp"
+    android:text="Login" />
 
 </RelativeLayout>

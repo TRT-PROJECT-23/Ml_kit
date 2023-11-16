@@ -1,0 +1,8 @@
+<!-- res/drawable/diagonal_lines_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:type="linear"
+        android:startColor="#1a1a1a"
+    android:endColor="#4286f4"
+    android:angle="45"/>
+</shape>

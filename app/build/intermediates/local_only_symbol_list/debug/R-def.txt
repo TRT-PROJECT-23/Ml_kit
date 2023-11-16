@@ -2,10 +2,12 @@ R_DEF: Internal format may change without notice
 local
 color blue
 color blue_grey_400
+color button_blue
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color gray
+color light_gray
 color light_green_700
 color light_grey_400
 color red
@@ -13,6 +15,8 @@ color white
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen padding_standard
+drawable button_background
+drawable diagonal_lines_background
 drawable ic_settings_white_24dp
 drawable ic_switch_camera_white_48dp
 drawable ic_switch_camera_white_48dp_inset

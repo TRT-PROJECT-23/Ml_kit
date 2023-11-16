@@ -541,6 +541,7 @@ int color bright_foreground_inverse_material_dark 0x7f040025
 int color bright_foreground_inverse_material_light 0x7f040026
 int color bright_foreground_material_dark 0x7f040027
 int color bright_foreground_material_light 0x7f040028
+int color button_blue 0x7f04006c
 int color button_material_dark 0x7f040029
 int color button_material_light 0x7f04002a
 int color colorAccent 0x7f04002b
@@ -568,6 +569,7 @@ int color foreground_material_light 0x7f040040
 int color gray 0x7f040041
 int color highlighted_text_material_dark 0x7f040042
 int color highlighted_text_material_light 0x7f040043
+int color light_gray 0x7f04006d
 int color light_green_700 0x7f040044
 int color light_grey_400 0x7f040045
 int color material_blue_grey_800 0x7f040046
@@ -822,6 +824,7 @@ int drawable btn_radio_off_mtrl 0x7f06005a
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f06005b
 int drawable btn_radio_on_mtrl 0x7f06005c
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f06005d
+int drawable button_background 0x7f060086
 int drawable common_full_open_on_phone 0x7f06005e
 int drawable common_google_signin_btn_icon_dark 0x7f06005f
 int drawable common_google_signin_btn_icon_dark_focused 0x7f060060
@@ -841,6 +844,7 @@ int drawable common_google_signin_btn_text_light 0x7f06006d
 int drawable common_google_signin_btn_text_light_focused 0x7f06006e
 int drawable common_google_signin_btn_text_light_normal 0x7f06006f
 int drawable common_google_signin_btn_text_light_normal_background 0x7f060070
+int drawable diagonal_lines_background 0x7f060087
 int drawable googleg_disabled_color_18 0x7f060071
 int drawable googleg_standard_color_18 0x7f060072
 int drawable ic_settings_white_24dp 0x7f060073
