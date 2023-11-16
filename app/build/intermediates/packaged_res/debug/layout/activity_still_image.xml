@@ -31,7 +31,7 @@
       android:layout_width="match_parent"
       android:layout_height="300dp"
       app:layout_constraintBottom_toBottomOf="parent"
-      android:background="#00DAFF"
+      android:background="@drawable/diagonal_lines_background"
       android:orientation="vertical">
 
     <Button
@@ -46,13 +46,13 @@
         android:id="@+id/text0"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
         android:text="@string/result0"
         android:textAlignment="center"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 
   </LinearLayout>

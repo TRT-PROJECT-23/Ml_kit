@@ -69,11 +69,6 @@
             android:exported="false" >
         </activity>
         <activity
-            android:name="com.google.mlkit.vision.demo.java.LivePreviewActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme" >
-        </activity>
-        <activity
             android:name="com.google.mlkit.vision.demo.CodeScanner"
             android:exported="false"
             android:theme="@style/AppTheme" >
