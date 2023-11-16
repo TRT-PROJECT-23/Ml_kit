@@ -80,7 +80,7 @@ public class TextRecognitionProcessor extends VisionProcessorBase<Text> {
 
     if (result0 != null) {
       // Update the TextView with the recognized text
-      result0.setText(text.getText());
+      result0.setText(extractDigits(text));
     }
 
     logExtrasForTesting(text);
@@ -92,7 +92,21 @@ public class TextRecognitionProcessor extends VisionProcessorBase<Text> {
                     showLanguageTag,
                     showConfidence));
   }
-
+  // Method to extract only the digits from the recognized text
+  private String extractDigits(Text text) {
+    StringBuilder digits = new StringBuilder();
+    for (Text.TextBlock textBlock : text.getTextBlocks()) {
+      for (Text.Line line : textBlock.getLines()) {
+        for (Text.Element element : line.getElements()) {
+          // Check if the recognized element contains only digits
+          if (element.getText().matches("\\d+")) {
+            digits.append(element.getText());
+          }
+        }
+      }
+    }
+    return digits.toString();
+  }
 
   private static void logExtrasForTesting(Text text) {
     if (text != null) {
