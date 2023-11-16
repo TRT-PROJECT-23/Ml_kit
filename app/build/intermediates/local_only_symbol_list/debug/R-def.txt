@@ -25,6 +25,8 @@ drawable logo_mlkit
 id buttonLogin
 id control
 id detector
+id editTextPassword
+id editTextUsername
 id facing_switch
 id graphic_overlay
 id imageView
@@ -42,6 +44,7 @@ id take_photo_using_camera
 id test_activity_list_view
 id text0
 id text1
+id textWelcome
 layout activity_chooser
 layout activity_settings
 layout activity_still_image
