@@ -18,10 +18,17 @@ package com.google.mlkit.vision.demo.java;
 
 import static java.lang.Math.max;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.RectF;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -29,6 +36,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.util.Pair;
 import android.view.MenuInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.AdapterView;
@@ -86,6 +94,14 @@ public final class StillImageActivity extends AppCompatActivity {
   private int imageMaxHeight;
   private VisionImageProcessor imageProcessor;
 
+  private float startX, startY, endX, endY;
+  private boolean isDrawing = false;
+  private Bitmap mutableBitmap; // Declare mutableBitmap as a class-level variable
+
+  private RectF drawnRect;
+
+
+  @SuppressLint("ClickableViewAccessibility")
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -93,32 +109,64 @@ public final class StillImageActivity extends AppCompatActivity {
     setContentView(R.layout.activity_still_image);
 
     findViewById(R.id.select_image_button)
-        .setOnClickListener(
-            view -> {
-              // Menu for selecting either: a) take new photo b) select from existing
-              PopupMenu popup = new PopupMenu(StillImageActivity.this, view);
-              popup.setOnMenuItemClickListener(
-                  menuItem -> {
-                    int itemId = menuItem.getItemId();
-                    if (itemId == R.id.select_images_from_local) {
-                      startChooseImageIntentForResult();
-                      return true;
-                    } else if (itemId == R.id.take_photo_using_camera) {
-                      startCameraIntentForResult();
-                      return true;
-                    }
-                    return false;
-                  });
-              MenuInflater inflater = popup.getMenuInflater();
-              inflater.inflate(R.menu.camera_button_menu, popup.getMenu());
-              popup.show();
-            });
+            .setOnClickListener(
+                    view -> {
+                      // Menu for selecting either: a) take new photo b) select from existing
+                      PopupMenu popup = new PopupMenu(StillImageActivity.this, view);
+                      popup.setOnMenuItemClickListener(
+                              menuItem -> {
+                                int itemId = menuItem.getItemId();
+                                if (itemId == R.id.select_images_from_local) {
+                                  startChooseImageIntentForResult();
+                                  return true;
+                                } else if (itemId == R.id.take_photo_using_camera) {
+                                  startCameraIntentForResult();
+                                  return true;
+                                }
+                                return false;
+                              });
+                      MenuInflater inflater = popup.getMenuInflater();
+                      inflater.inflate(R.menu.camera_button_menu, popup.getMenu());
+                      popup.show();
+                    });
     preview = findViewById(R.id.preview);
+
+    preview.setOnTouchListener((v, event) -> {
+      float eventX = event.getX();
+      float eventY = event.getY();
+
+      switch (event.getAction()) {
+        case MotionEvent.ACTION_DOWN:
+          // Clear the graphic overlay when a new selection begins
+          graphicOverlay.clear();
+
+          // Initialize a new rectangle when the touch event starts
+          drawnRect = new RectF(eventX, eventY, eventX, eventY);
+          isDrawing = true;
+          break;
+
+        case MotionEvent.ACTION_UP:
+          if (isDrawing) {
+            // Finalize the rectangle and process the image inside the defined rectangle area
+            drawnRect.right = eventX;
+            drawnRect.bottom = eventY;
+            isDrawing = false;
+            drawRectangle(); // Draw the finalized rectangle
+            processImageInRectangle(drawnRect.left, drawnRect.top, drawnRect.right, drawnRect.bottom);
+          }
+          break;
+      }
+      return true;
+    });
+
+
+
+
     graphicOverlay = findViewById(R.id.graphic_overlay);
 
 
     isLandScape =
-        (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE);
+            (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE);
 
     if (savedInstanceState != null) {
       imageUri = savedInstanceState.getParcelable(KEY_IMAGE_URI);
@@ -127,28 +175,28 @@ public final class StillImageActivity extends AppCompatActivity {
 
     View rootView = findViewById(R.id.root);
     rootView
-        .getViewTreeObserver()
-        .addOnGlobalLayoutListener(
-            new OnGlobalLayoutListener() {
-              @Override
-              public void onGlobalLayout() {
-                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                imageMaxWidth = rootView.getWidth();
-                imageMaxHeight = rootView.getHeight() - findViewById(R.id.control).getHeight();
-                if (SIZE_SCREEN.equals(selectedSize)) {
-                  tryReloadAndDetectInImage();
-                }
-              }
-            });
+            .getViewTreeObserver()
+            .addOnGlobalLayoutListener(
+                    new OnGlobalLayoutListener() {
+                      @Override
+                      public void onGlobalLayout() {
+                        rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                        imageMaxWidth = rootView.getWidth();
+                        imageMaxHeight = rootView.getHeight() - findViewById(R.id.control).getHeight();
+                        if (SIZE_SCREEN.equals(selectedSize)) {
+                          tryReloadAndDetectInImage();
+                        }
+                      }
+                    });
 
     ImageView settingsButton = findViewById(R.id.settings_button);
     settingsButton.setOnClickListener(
-        v -> {
-          Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
-          intent.putExtra(
-              SettingsActivity.EXTRA_LAUNCH_SOURCE, SettingsActivity.LaunchSource.STILL_IMAGE);
-          startActivity(intent);
-        });
+            v -> {
+              Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
+              intent.putExtra(
+                      SettingsActivity.EXTRA_LAUNCH_SOURCE, SettingsActivity.LaunchSource.STILL_IMAGE);
+              startActivity(intent);
+            });
   }
 
   @Override
@@ -174,8 +222,6 @@ public final class StillImageActivity extends AppCompatActivity {
       imageProcessor.stop();
     }
   }
-
-
 
 
   @Override
@@ -250,23 +296,23 @@ public final class StillImageActivity extends AppCompatActivity {
 
         // Determine how much to scale down the image
         float scaleFactor =
-            max(
-                (float) imageBitmap.getWidth() / (float) targetedSize.first,
-                (float) imageBitmap.getHeight() / (float) targetedSize.second);
+                max(
+                        (float) imageBitmap.getWidth() / (float) targetedSize.first,
+                        (float) imageBitmap.getHeight() / (float) targetedSize.second);
 
         resizedBitmap =
-            Bitmap.createScaledBitmap(
-                imageBitmap,
-                (int) (imageBitmap.getWidth() / scaleFactor),
-                (int) (imageBitmap.getHeight() / scaleFactor),
-                true);
+                Bitmap.createScaledBitmap(
+                        imageBitmap,
+                        (int) (imageBitmap.getWidth() / scaleFactor),
+                        (int) (imageBitmap.getHeight() / scaleFactor),
+                        true);
       }
 
       preview.setImageBitmap(resizedBitmap);
 
       if (imageProcessor != null) {
         graphicOverlay.setImageSourceInfo(
-            resizedBitmap.getWidth(), resizedBitmap.getHeight(), /* isFlipped= */ false);
+                resizedBitmap.getWidth(), resizedBitmap.getHeight(), /* isFlipped= */ false);
         imageProcessor.processBitmap(resizedBitmap, graphicOverlay);
       } else {
         Log.e(TAG, "Null imageProcessor, please check adb logs for imageProcessor creation error");
@@ -309,21 +355,13 @@ public final class StillImageActivity extends AppCompatActivity {
       switch (selectedMode) {
 
 
-
         case TEXT_RECOGNITION_LATIN:
           if (imageProcessor != null) {
             imageProcessor.stop();
           }
           imageProcessor =
-              new TextRecognitionProcessor(this, new TextRecognizerOptions.Builder().build());
+                  new TextRecognitionProcessor(this, new TextRecognizerOptions.Builder().build());
           break;
-
-
-
-
-
-
-
 
 
         default:
@@ -332,10 +370,70 @@ public final class StillImageActivity extends AppCompatActivity {
     } catch (Exception e) {
       Log.e(TAG, "Can not create image processor: " + selectedMode, e);
       Toast.makeText(
-              getApplicationContext(),
-              "Can not create image processor: " + e.getMessage(),
-              Toast.LENGTH_LONG)
-          .show();
+                      getApplicationContext(),
+                      "Can not create image processor: " + e.getMessage(),
+                      Toast.LENGTH_LONG)
+              .show();
     }
   }
+
+  private void drawRectangle() {
+    // Get the original bitmap from the preview ImageView
+    Bitmap originalBitmap = ((BitmapDrawable) preview.getDrawable()).getBitmap().copy(Bitmap.Config.ARGB_8888, true);
+
+    // Create a Canvas to draw on the mutable bitmap
+    Canvas canvas = new Canvas(originalBitmap);
+
+    // Draw the bitmap on the canvas
+    canvas.drawBitmap(originalBitmap, 0, 0, null);
+
+    // Define the paint properties for drawing the rectangle
+    Paint paint = new Paint();
+    paint.setColor(Color.RED);
+    paint.setStyle(Paint.Style.STROKE);
+    paint.setStrokeWidth(5);
+
+    // Draw the rectangle on the canvas
+    canvas.drawRect(drawnRect, paint);
+
+    // Set the modified bitmap to the preview ImageView
+    preview.setImageBitmap(originalBitmap);
+  }
+  private void processImageInRectangle(float startX, float startY, float endX, float endY) {
+    // Get the original bitmap from the preview ImageView
+    Bitmap originalBitmap = ((BitmapDrawable) preview.getDrawable()).getBitmap();
+
+    // Calculate the rectangle coordinates in terms of the original image
+    int imageWidth = originalBitmap.getWidth();
+    int imageHeight = originalBitmap.getHeight();
+
+    float scaleFactorX = (float) imageWidth / preview.getWidth();
+    float scaleFactorY = (float) imageHeight / preview.getHeight();
+
+    int croppedStartX = (int) (startX * scaleFactorX);
+    int croppedStartY = (int) (startY * scaleFactorY);
+    int croppedEndX = (int) (endX * scaleFactorX);
+    int croppedEndY = (int) (endY * scaleFactorY);
+
+    // Ensure that the rectangle coordinates are within bounds
+    croppedStartX = Math.max(0, croppedStartX);
+    croppedStartY = Math.max(0, croppedStartY);
+    croppedEndX = Math.min(imageWidth, croppedEndX);
+    croppedEndY = Math.min(imageHeight, croppedEndY);
+
+    // Crop the image within the defined rectangle
+    Bitmap croppedBitmap = Bitmap.createBitmap(originalBitmap, croppedStartX, croppedStartY,
+            croppedEndX - croppedStartX, croppedEndY - croppedStartY);
+
+    // Process the cropped image for text recognition using the image processor
+    if (imageProcessor != null) {
+      graphicOverlay.clear(); // Clear the overlay first
+      graphicOverlay.setImageSourceInfo(croppedBitmap.getWidth(), croppedBitmap.getHeight(), false);
+      imageProcessor.processBitmap(croppedBitmap, graphicOverlay);
+    } else {
+      Log.e(TAG, "Null imageProcessor, please check adb logs for imageProcessor creation error");
+    }
+  }
+
 }
+
