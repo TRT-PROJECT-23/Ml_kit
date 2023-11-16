@@ -6,12 +6,43 @@
     android:padding="16dp"
     android:background="@drawable/diagonal_lines_background">
 
+    <!-- Welcome text at the top with increased text size -->
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- Username EditText placed lower with increased margin top -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textWelcome"
+        android:layout_marginTop="350dp"
+        android:hint="Username" />
+
+    <!-- Password EditText placed even lower with increased margin top -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="32dp"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <!-- Login Button at the bottom -->
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-    android:layout_marginBottom="32dp"
-    android:text="Login" />
+        android:layout_marginBottom="32dp"
+        android:text="Login" />
 
 </RelativeLayout>

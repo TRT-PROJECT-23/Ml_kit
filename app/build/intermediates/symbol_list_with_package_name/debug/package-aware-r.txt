@@ -992,6 +992,8 @@ id dragUp
 id easeIn
 id easeInOut
 id easeOut
+id editTextPassword
+id editTextUsername
 id edit_query
 id end
 id expand_activities_button
@@ -1134,6 +1136,7 @@ id text1
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textWelcome
 id time
 id title
 id titleDividerNoCustom
