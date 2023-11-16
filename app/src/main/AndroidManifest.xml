@@ -51,12 +51,7 @@
             android:name=".java.ChooserActivity"
             android:exported="false">
         </activity>
-
-        <activity
-            android:name=".java.LivePreviewActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme">
-        </activity>
+        
 
         <activity
             android:name=".CodeScanner"
