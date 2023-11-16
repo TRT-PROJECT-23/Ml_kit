@@ -41,14 +41,8 @@ public final class ChooserActivity extends AppCompatActivity
 
   @SuppressWarnings("NewApi") // CameraX is only available on API 21+
   private static final Class<?>[] CLASSES =
-      VERSION.SDK_INT < VERSION_CODES.LOLLIPOP
-          ? new Class<?>[] {
-             StillImageActivity.class,
-          }
-          : new Class<?>[] {
-
-            StillImageActivity.class,
-
+          new Class<?>[]{
+                  StillImageActivity.class,
           };
 
   private static final int[] DESCRIPTION_IDS =
