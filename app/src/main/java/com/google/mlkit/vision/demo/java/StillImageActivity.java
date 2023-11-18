@@ -20,6 +20,7 @@ import static java.lang.Math.max;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
@@ -33,6 +34,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.renderscript.Allocation;
+import android.renderscript.Element;
+import android.renderscript.RenderScript;
+import android.renderscript.ScriptIntrinsicBlur;
 import android.util.Log;
 import android.util.Pair;
 import android.view.MenuInflater;
@@ -284,12 +290,22 @@ public final class StillImageActivity extends AppCompatActivity {
         return;
       }
 
+      // Preprocess the image: grayscale conversion and contrast adjustment
+      float contrastLevel = 150.0f; // Adjust this value to change the contrast
+      //Bitmap processedBitmap = convertToGrayscaleWithContrast(imageBitmap, contrastLevel);
+
+      Bitmap processedBitmap = convertToGrayscale(imageBitmap);
+
+
+      // Apply blur effect to the processed image
+      Bitmap blurredBitmap = applyBlur(getApplicationContext(), processedBitmap, 17.0f); // Adjust blur radius
+
       // Clear the overlay first
       graphicOverlay.clear();
 
       Bitmap resizedBitmap;
       if (selectedSize.equals(SIZE_ORIGINAL)) {
-        resizedBitmap = imageBitmap;
+        resizedBitmap = blurredBitmap; // Use the blurred bitmap for original size
       } else {
         // Get the dimensions of the image view
         Pair<Integer, Integer> targetedSize = getTargetedWidthHeight();
@@ -297,14 +313,14 @@ public final class StillImageActivity extends AppCompatActivity {
         // Determine how much to scale down the image
         float scaleFactor =
                 max(
-                        (float) imageBitmap.getWidth() / (float) targetedSize.first,
-                        (float) imageBitmap.getHeight() / (float) targetedSize.second);
+                        (float) blurredBitmap.getWidth() / (float) targetedSize.first,
+                        (float) blurredBitmap.getHeight() / (float) targetedSize.second);
 
         resizedBitmap =
                 Bitmap.createScaledBitmap(
-                        imageBitmap,
-                        (int) (imageBitmap.getWidth() / scaleFactor),
-                        (int) (imageBitmap.getHeight() / scaleFactor),
+                        blurredBitmap,
+                        (int) (blurredBitmap.getWidth() / scaleFactor),
+                        (int) (blurredBitmap.getHeight() / scaleFactor),
                         true);
       }
 
@@ -322,7 +338,6 @@ public final class StillImageActivity extends AppCompatActivity {
       imageUri = null;
     }
   }
-
   private Pair<Integer, Integer> getTargetedWidthHeight() {
     int targetWidth;
     int targetHeight;
@@ -434,6 +449,90 @@ public final class StillImageActivity extends AppCompatActivity {
       Log.e(TAG, "Null imageProcessor, please check adb logs for imageProcessor creation error");
     }
   }
+
+  public static Bitmap applyBlur(Context context, Bitmap originalBitmap, float blurRadius) {
+    Bitmap blurredBitmap = Bitmap.createBitmap(originalBitmap.getWidth(), originalBitmap.getHeight(), Bitmap.Config.ARGB_8888);
+
+    RenderScript rs = RenderScript.create(context);
+    Allocation input = Allocation.createFromBitmap(rs, originalBitmap);
+    Allocation output = Allocation.createFromBitmap(rs, blurredBitmap);
+
+    ScriptIntrinsicBlur blur = ScriptIntrinsicBlur.create(rs, Element.U8_4(rs));
+    blur.setInput(input);
+    blur.setRadius(blurRadius);
+    blur.forEach(output);
+
+    output.copyTo(blurredBitmap);
+
+    rs.destroy();
+
+    return blurredBitmap;
+  }
+
+  public static Bitmap convertToGrayscaleWithContrast(Bitmap originalBitmap, float contrast) {
+    int width = originalBitmap.getWidth();
+    int height = originalBitmap.getHeight();
+
+    Bitmap grayscaleBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+
+    int[] pixels = new int[width * height];
+    originalBitmap.getPixels(pixels, 0, width, 0, 0, width, height);
+
+    float contrastFactor = (259f * (contrast + 255f)) / (255f * (259f - contrast));
+
+    for (int i = 0; i < width * height; i++) {
+      int pixel = pixels[i];
+      int red = Color.red(pixel);
+      int green = Color.green(pixel);
+      int blue = Color.blue(pixel);
+
+      int luminance = (int) (0.299 * red + 0.587 * green + 0.114 * blue);
+
+      int newRed = truncateColor(contrastFactor * (red - 128) + 128 + luminance);
+      int newGreen = truncateColor(contrastFactor * (green - 128) + 128 + luminance);
+      int newBlue = truncateColor(contrastFactor * (blue - 128) + 128 + luminance);
+
+      pixels[i] = Color.rgb(newRed, newGreen, newBlue);
+    }
+
+    grayscaleBitmap.setPixels(pixels, 0, width, 0, 0, width, height);
+
+    return grayscaleBitmap;
+  }
+
+  private static int truncateColor(float color) {
+    if (color < 0) {
+      return 0;
+    } else if (color > 255) {
+      return 255;
+    }
+    return (int) color;
+  }
+
+  public static Bitmap convertToGrayscale(Bitmap originalBitmap) {
+    int width = originalBitmap.getWidth();
+    int height = originalBitmap.getHeight();
+
+    Bitmap grayscaleBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+
+    int[] pixels = new int[width * height];
+    originalBitmap.getPixels(pixels, 0, width, 0, 0, width, height);
+
+    for (int i = 0; i < width * height; i++) {
+      int pixel = pixels[i];
+      int red = Color.red(pixel);
+      int green = Color.green(pixel);
+      int blue = Color.blue(pixel);
+
+      int luminance = (int) (0.299 * red + 0.587 * green + 0.114 * blue);
+      pixels[i] = Color.rgb(luminance, luminance, luminance);
+    }
+
+    grayscaleBitmap.setPixels(pixels, 0, width, 0, 0, width, height);
+
+    return grayscaleBitmap;
+  }
+
 
 }
 
