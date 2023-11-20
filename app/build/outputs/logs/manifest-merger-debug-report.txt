@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:2:1-93:12
-INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:2:1-93:12
-INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:2:1-93:12
-INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:2:1-93:12
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:2:1-95:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\arzka\.gradle\caches\transforms-3\d51659e8d6c76a6b6ce5376420428838\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.mlkit:barcode-scanning:17.2.0] C:\Users\arzka\.gradle\caches\transforms-3\c35e84aabe3b8c8c8d784f101694def0\transformed\barcode-scanning-17.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.mlkit:text-recognition:16.0.0] C:\Users\arzka\.gradle\caches\transforms-3\bf6359609e743757008abf58f1bd2f6d\transformed\text-recognition-16.0.0\AndroidManifest.xml:2:1-7:12
@@ -190,8 +190,8 @@ ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\
 	android:name
 		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:21:22-62
 application
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:23:5-86:19
-INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:23:5-86:19
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:23:5-88:19
+INJECTED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:23:5-88:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\arzka\.gradle\caches\transforms-3\754e4fbe305f79176856667e4ef4efeb\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\arzka\.gradle\caches\transforms-3\754e4fbe305f79176856667e4ef4efeb\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\475c92b8453d14b4a4c1dfed2e8717eb\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:8:5-16:19
@@ -268,36 +268,40 @@ ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\
 		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
 		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:51:13-49
+activity#com.google.mlkit.vision.demo.java.Glucose
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:55:9-49
+	android:name
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:55:19-47
 activity#com.google.mlkit.vision.demo.CodeScanner
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:56:9-60:20
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:58:9-62:20
 	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:58:13-37
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:60:13-37
 	android:theme
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:59:13-44
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:61:13-44
 	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:57:13-40
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:59:13-40
 activity#com.google.mlkit.vision.demo.java.StillImageActivity
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:66:9-70:20
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:68:9-72:20
 	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:68:13-37
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:70:13-37
 	android:theme
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:69:13-44
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:71:13-44
 	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:67:13-52
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:69:13-52
 activity#com.google.mlkit.vision.demo.preference.SettingsActivity
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:82:9-84:39
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:84:9-86:39
 	android:exported
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:84:13-37
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:86:13-37
 	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:83:13-56
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:85:13-56
 queries
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:87:5-91:15
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:89:5-93:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:88:9-90:18
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:90:9-92:18
 action#android.media.action.IMAGE_CAPTURE
-ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:89:13-73
+ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:91:13-73
 	android:name
-		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:89:21-70
+		ADDED from C:\Users\arzka\Desktop\Koulu\TRT_Projekti\GitHub\Ml_kit\app\src\main\AndroidManifest.xml:91:21-70
 service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
 ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\arzka\.gradle\caches\transforms-3\475c92b8453d14b4a4c1dfed2e8717eb\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\arzka\.gradle\caches\transforms-3\ffc7283c157ce99ece7737df6b406900\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:9:9-15:19

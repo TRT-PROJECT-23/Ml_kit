@@ -1045,12 +1045,14 @@ int id mixed 0x7f0700af
 int id motion_base 0x7f0700b0
 int id multiply 0x7f0700b1
 int id never 0x7f0700b2
+int id nextButton 0x7f070123
 int id next_button 0x7f0700b3
 int id none 0x7f0700b4
 int id normal 0x7f0700b5
 int id notification_background 0x7f0700b6
 int id notification_main_column 0x7f0700b7
 int id notification_main_column_container 0x7f0700b8
+int id observationTextView 0x7f070124
 int id off 0x7f0700b9
 int id on 0x7f0700ba
 int id packed 0x7f0700bb
@@ -1207,6 +1209,7 @@ int layout activity_vision_entry_choice 0x7f0a0021
 int layout activity_vision_live_preview 0x7f0a0022
 int layout code_scanner 0x7f0a0023
 int layout custom_dialog 0x7f0a0024
+int layout glucose 0x7f0a0033
 int layout notification_action 0x7f0a0025
 int layout notification_action_tombstone 0x7f0a0026
 int layout notification_template_custom_big 0x7f0a0027

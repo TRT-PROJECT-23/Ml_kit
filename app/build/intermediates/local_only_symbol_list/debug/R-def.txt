@@ -31,7 +31,9 @@ id facing_switch
 id graphic_overlay
 id imageView
 id java_entry_point
+id nextButton
 id next_button
+id observationTextView
 id preview
 id preview_view
 id root
@@ -53,6 +55,7 @@ layout activity_vision_cameraxsource_demo
 layout activity_vision_entry_choice
 layout activity_vision_live_preview
 layout code_scanner
+layout glucose
 layout settings_style
 layout spinner_style
 layout toggle_style

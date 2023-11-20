@@ -1046,12 +1046,14 @@ id mixed
 id motion_base
 id multiply
 id never
+id nextButton
 id next_button
 id none
 id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id observationTextView
 id off
 id on
 id packed
@@ -1208,6 +1210,7 @@ layout activity_vision_entry_choice
 layout activity_vision_live_preview
 layout code_scanner
 layout custom_dialog
+layout glucose
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

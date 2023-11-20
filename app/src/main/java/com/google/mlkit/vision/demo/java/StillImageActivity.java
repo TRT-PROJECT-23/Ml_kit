@@ -48,9 +48,11 @@ import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.mlkit.vision.demo.BitmapUtils;
@@ -203,6 +205,29 @@ public final class StillImageActivity extends AppCompatActivity {
                       SettingsActivity.EXTRA_LAUNCH_SOURCE, SettingsActivity.LaunchSource.STILL_IMAGE);
               startActivity(intent);
             });
+
+    Button nextButton = findViewById(R.id.nextButton);
+    nextButton.setOnClickListener(view -> {
+      // Get the detected text or user input
+
+      // Find the TextView by its ID
+      TextView text0TextView = findViewById(R.id.text0);
+      String textFromTextView = null;
+      if (text0TextView != null) {
+        textFromTextView = text0TextView.getText().toString();
+        Log.d("TextFromTextView", textFromTextView);
+      }
+
+
+      String detectedText = ""; // Replace this with the actual detected text or user input
+
+      // Proceed to the next activity, passing the text
+      Intent intent = new Intent(StillImageActivity.this, Glucose.class);
+      intent.putExtra("DETECTED_TEXT", textFromTextView); // Pass the text to the next activity
+      startActivity(intent);
+    });
+
+
   }
 
   @Override
@@ -291,14 +316,13 @@ public final class StillImageActivity extends AppCompatActivity {
       }
 
       // Preprocess the image: grayscale conversion and contrast adjustment
-      float contrastLevel = 150.0f; // Adjust this value to change the contrast
-      //Bitmap processedBitmap = convertToGrayscaleWithContrast(imageBitmap, contrastLevel);
+
 
       Bitmap processedBitmap = convertToGrayscale(imageBitmap);
 
 
       // Apply blur effect to the processed image
-      Bitmap blurredBitmap = applyBlur(getApplicationContext(), processedBitmap, 17.0f); // Adjust blur radius
+      Bitmap blurredBitmap = applyBlur(getApplicationContext(), processedBitmap, 18.0f); // Adjust blur radius
 
       // Clear the overlay first
       graphicOverlay.clear();
@@ -469,45 +493,7 @@ public final class StillImageActivity extends AppCompatActivity {
     return blurredBitmap;
   }
 
-  public static Bitmap convertToGrayscaleWithContrast(Bitmap originalBitmap, float contrast) {
-    int width = originalBitmap.getWidth();
-    int height = originalBitmap.getHeight();
 
-    Bitmap grayscaleBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-
-    int[] pixels = new int[width * height];
-    originalBitmap.getPixels(pixels, 0, width, 0, 0, width, height);
-
-    float contrastFactor = (259f * (contrast + 255f)) / (255f * (259f - contrast));
-
-    for (int i = 0; i < width * height; i++) {
-      int pixel = pixels[i];
-      int red = Color.red(pixel);
-      int green = Color.green(pixel);
-      int blue = Color.blue(pixel);
-
-      int luminance = (int) (0.299 * red + 0.587 * green + 0.114 * blue);
-
-      int newRed = truncateColor(contrastFactor * (red - 128) + 128 + luminance);
-      int newGreen = truncateColor(contrastFactor * (green - 128) + 128 + luminance);
-      int newBlue = truncateColor(contrastFactor * (blue - 128) + 128 + luminance);
-
-      pixels[i] = Color.rgb(newRed, newGreen, newBlue);
-    }
-
-    grayscaleBitmap.setPixels(pixels, 0, width, 0, 0, width, height);
-
-    return grayscaleBitmap;
-  }
-
-  private static int truncateColor(float color) {
-    if (color < 0) {
-      return 0;
-    } else if (color > 255) {
-      return 255;
-    }
-    return (int) color;
-  }
 
   public static Bitmap convertToGrayscale(Bitmap originalBitmap) {
     int width = originalBitmap.getWidth();
@@ -532,6 +518,7 @@ public final class StillImageActivity extends AppCompatActivity {
 
     return grayscaleBitmap;
   }
+
 
 
 }

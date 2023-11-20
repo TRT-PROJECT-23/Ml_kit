@@ -110,6 +110,9 @@ dependencies {
 
     // On Device Machine Learnings
     implementation "com.google.android.odml:image:1.0.0-beta1"
+
+    implementation 'com.google.code.gson:gson:2.8.9'
+
 }
 
 configurations {

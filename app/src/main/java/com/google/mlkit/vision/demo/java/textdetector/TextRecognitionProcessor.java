@@ -38,6 +38,8 @@ import com.google.mlkit.vision.text.TextRecognizer;
 import com.google.mlkit.vision.text.TextRecognizerOptionsInterface;
 import java.util.List;
 
+
+
 /** Processor for the text detector demo. */
 public class TextRecognitionProcessor extends VisionProcessorBase<Text> {
 

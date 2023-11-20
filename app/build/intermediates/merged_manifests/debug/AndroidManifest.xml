@@ -67,6 +67,7 @@
             android:name="com.google.mlkit.vision.demo.java.ChooserActivity"
             android:exported="false" >
         </activity>
+        <activity android:name="com.google.mlkit.vision.demo.java.Glucose" />
         <activity
             android:name="com.google.mlkit.vision.demo.CodeScanner"
             android:exported="false"

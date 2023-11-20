@@ -51,7 +51,9 @@
             android:name=".java.ChooserActivity"
             android:exported="false">
         </activity>
-        
+
+        <activity android:name=".java.Glucose"/>
+
 
         <activity
             android:name=".CodeScanner"
