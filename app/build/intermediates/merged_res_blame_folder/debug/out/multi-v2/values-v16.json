@@ -4,7 +4,7 @@
             "outputFile": "com.google.mlkit.vision.demo.app-mergeDebugResources-12:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Salmi\\.gradle\\caches\\transforms-3\\53ebcdee45e21dbb147bfdb5c013cc07\\transformed\\core-1.3.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\arzka\\.gradle\\caches\\transforms-3\\53ebcdee45e21dbb147bfdb5c013cc07\\transformed\\core-1.3.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Salmi\\.gradle\\caches\\transforms-3\\a111cedbaa373f7445daa2dc237c24ba\\transformed\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\arzka\\.gradle\\caches\\transforms-3\\a111cedbaa373f7445daa2dc237c24ba\\transformed\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
