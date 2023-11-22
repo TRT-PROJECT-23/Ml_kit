@@ -223,7 +223,7 @@ public final class StillImageActivity extends AppCompatActivity {
 
       // Proceed to the next activity, passing the text
       Intent intent = new Intent(StillImageActivity.this, Glucose.class);
-      intent.putExtra("DETECTED_TEXT", textFromTextView); // Pass the text to the next activity
+      intent.putExtra("DETECTED_NUM", textFromTextView); // Pass the text to the next activity
       startActivity(intent);
     });
 
@@ -253,7 +253,6 @@ public final class StillImageActivity extends AppCompatActivity {
       imageProcessor.stop();
     }
   }
-
 
   @Override
   public void onSaveInstanceState(Bundle outState) {
@@ -315,9 +314,7 @@ public final class StillImageActivity extends AppCompatActivity {
         return;
       }
 
-      // Preprocess the image: grayscale conversion and contrast adjustment
-
-
+      // Preprocess the image: grayscale conversion
       Bitmap processedBitmap = convertToGrayscale(imageBitmap);
 
 
@@ -493,8 +490,6 @@ public final class StillImageActivity extends AppCompatActivity {
     return blurredBitmap;
   }
 
-
-
   public static Bitmap convertToGrayscale(Bitmap originalBitmap) {
     int width = originalBitmap.getWidth();
     int height = originalBitmap.getHeight();
@@ -518,8 +513,6 @@ public final class StillImageActivity extends AppCompatActivity {
 
     return grayscaleBitmap;
   }
-
-
 
 }
 

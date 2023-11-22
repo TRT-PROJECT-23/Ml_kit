@@ -25,7 +25,7 @@ public class Glucose extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        String detectedText = getIntent().getStringExtra("DETECTED_TEXT");
+        String detectedText = getIntent().getStringExtra("DETECTED_NUM");
         float detected = Float.parseFloat(detectedText);
         detected = detected/10.0f;
 
