@@ -321,14 +321,6 @@ public final class CodeScanner extends AppCompatActivity {
           imageProcessor = new BarcodeScannerProcessor(this, /* zoomCallback= */ null);
           break;
 
-
-
-
-
-
-
-
-
         default:
           Log.e(TAG, "Unknown selectedMode: " + selectedMode);
       }

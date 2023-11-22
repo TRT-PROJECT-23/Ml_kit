@@ -46,7 +46,12 @@ id take_photo_using_camera
 id test_activity_list_view
 id text0
 id text1
+id textBelowWelcome
+id textView1
+id textView2
+id textView23
 id textWelcome
+id upperTextRow
 layout activity_chooser
 layout activity_settings
 layout activity_still_image

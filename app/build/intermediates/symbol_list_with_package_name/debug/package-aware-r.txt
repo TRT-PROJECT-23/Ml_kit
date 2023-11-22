@@ -1136,8 +1136,12 @@ id text
 id text0
 id text1
 id text2
+id textBelowWelcome
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView1
+id textView2
+id textView23
 id textWelcome
 id time
 id title
@@ -1152,6 +1156,7 @@ id triangle
 id unchecked
 id uniform
 id up
+id upperTextRow
 id useLogo
 id video
 id view_tree_view_model_store_owner

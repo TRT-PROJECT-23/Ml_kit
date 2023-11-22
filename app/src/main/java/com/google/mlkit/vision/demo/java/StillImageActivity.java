@@ -34,6 +34,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 
 import android.renderscript.Allocation;
 import android.renderscript.Element;
@@ -319,10 +321,10 @@ public final class StillImageActivity extends AppCompatActivity {
       // Preprocess the image: grayscale conversion
       Bitmap processedBitmap = preprocessImage(imageBitmap);
       //Bitmap processedBitmap = convertToGrayscale(imageBitmap);
-      Bitmap binaryBitmap = convertToBinary(processedBitmap, 128);
+      //Bitmap binaryBitmap = convertToBinary(processedBitmap, 128);
 
       // Apply blur effect to the processed image
-      Bitmap blurredBitmap = applyBlur(getApplicationContext(),processedBitmap, 18.0f); // Adjust blur radius
+      Bitmap blurredBitmap = applyBlur(getApplicationContext(),processedBitmap, 28.0f); // Adjust blur radius
 
 
       // Clear the overlay first
@@ -358,6 +360,14 @@ public final class StillImageActivity extends AppCompatActivity {
       } else {
         Log.e(TAG, "Null imageProcessor, please check adb logs for imageProcessor creation error");
       }
+
+      preview.setVisibility(View.VISIBLE);
+
+      ConstraintSet constraintSet = new ConstraintSet();
+      constraintSet.clone((ConstraintLayout) findViewById(R.id.root));
+      constraintSet.connect(R.id.preview, ConstraintSet.BOTTOM, R.id.control, ConstraintSet.TOP);
+      constraintSet.applyTo((ConstraintLayout) findViewById(R.id.root));
+
     } catch (IOException e) {
       Log.e(TAG, "Error retrieving saved image");
       imageUri = null;
@@ -540,7 +550,7 @@ public final class StillImageActivity extends AppCompatActivity {
 
 
     // Apply binary conversion
-    Bitmap binaryBitmap = convertToBinary(originalBitmap, 128);
+    Bitmap binaryBitmap = convertToBinary(originalBitmap, 130);
 
 
     return binaryBitmap;

@@ -5,33 +5,58 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:keepScreenOn="true">
+    android:keepScreenOn="true"
+    android:background="@drawable/diagonal_lines_background">
 
-  <ImageView
-      android:id="@+id/preview"
-      android:layout_width="wrap_content"
+  <LinearLayout
+      android:id="@+id/upperTextRow"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:adjustViewBounds="true"
-      app:layout_constraintBottom_toTopOf="@+id/control"
-      app:layout_constraintEnd_toEndOf="parent"
+      android:orientation="vertical"
+      app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="150dp"
+      android:gravity="center">
 
-  <com.google.mlkit.vision.demo.GraphicOverlay
-      android:id="@+id/graphic_overlay"
-      android:layout_width="0dp"
-      android:layout_height="0dp"
-      app:layout_constraintLeft_toLeftOf="@id/preview"
-      app:layout_constraintRight_toRightOf="@id/preview"
-      app:layout_constraintTop_toTopOf="@id/preview"
-      app:layout_constraintBottom_toBottomOf="@id/preview"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take a picture"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Text View 2 -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="of the instrumen's"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Text View 3 -->
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="screen"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginEnd="8dp"/>
+  </LinearLayout>
 
   <LinearLayout
       android:id="@id/control"
       android:layout_width="match_parent"
       android:layout_height="300dp"
       app:layout_constraintBottom_toBottomOf="parent"
-      android:background="@drawable/diagonal_lines_background"
       android:orientation="vertical">
 
     <Button
@@ -62,9 +87,29 @@
         android:layout_below="@id/preview"
         android:layout_centerHorizontal="true" />
 
-
-
   </LinearLayout>
+
+  <ImageView
+      android:id="@+id/preview"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:adjustViewBounds="true"
+      app:layout_constraintBottom_toTopOf="@+id/control"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:visibility="invisible"/>
+
+  <com.google.mlkit.vision.demo.GraphicOverlay
+      android:id="@+id/graphic_overlay"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintLeft_toLeftOf="@id/preview"
+      app:layout_constraintRight_toRightOf="@id/preview"
+      app:layout_constraintTop_toTopOf="@id/preview"
+      app:layout_constraintBottom_toBottomOf="@id/preview"/>
+
+
 
   <include
       layout="@layout/settings_style"
