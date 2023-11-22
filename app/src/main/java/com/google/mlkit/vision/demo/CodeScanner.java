@@ -39,6 +39,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.mlkit.vision.demo.java.ChooserActivity;
@@ -269,6 +271,14 @@ public final class CodeScanner extends AppCompatActivity {
       } else {
         Log.e(TAG, "Null imageProcessor, please check adb logs for imageProcessor creation error");
       }
+
+      preview.setVisibility(View.VISIBLE);
+
+      ConstraintSet constraintSet = new ConstraintSet();
+      constraintSet.clone((ConstraintLayout) findViewById(R.id.root));
+      constraintSet.connect(R.id.preview, ConstraintSet.BOTTOM, R.id.control, ConstraintSet.TOP);
+      constraintSet.applyTo((ConstraintLayout) findViewById(R.id.root));
+
     } catch (IOException e) {
       Log.e(TAG, "Error retrieving saved image");
       imageUri = null;
