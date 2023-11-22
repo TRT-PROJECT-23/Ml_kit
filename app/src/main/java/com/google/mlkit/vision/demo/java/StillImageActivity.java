@@ -324,7 +324,7 @@ public final class StillImageActivity extends AppCompatActivity {
       //Bitmap binaryBitmap = convertToBinary(processedBitmap, 128);
 
       // Apply blur effect to the processed image
-      Bitmap blurredBitmap = applyBlur(getApplicationContext(),processedBitmap, 28.0f); // Adjust blur radius
+      Bitmap blurredBitmap = applyBlur(getApplicationContext(),processedBitmap, 25.0f); // Adjust blur radius
 
 
       // Clear the overlay first
