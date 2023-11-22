@@ -108,6 +108,8 @@ public final class StillImageActivity extends AppCompatActivity {
 
   private RectF drawnRect;
 
+  private static final int BINARY_THRESHOLD = 128; // Adjust the threshold as needed
+
 
   @SuppressLint("ClickableViewAccessibility")
   @Override
@@ -313,12 +315,15 @@ public final class StillImageActivity extends AppCompatActivity {
         return;
       }
 
-      // Preprocess the image: grayscale conversion
-      Bitmap processedBitmap = convertToGrayscale(imageBitmap);
 
+      // Preprocess the image: grayscale conversion
+      Bitmap processedBitmap = preprocessImage(imageBitmap);
+      //Bitmap processedBitmap = convertToGrayscale(imageBitmap);
+      Bitmap binaryBitmap = convertToBinary(processedBitmap, 128);
 
       // Apply blur effect to the processed image
-      Bitmap blurredBitmap = applyBlur(getApplicationContext(), processedBitmap, 18.0f); // Adjust blur radius
+      Bitmap blurredBitmap = applyBlur(getApplicationContext(),processedBitmap, 15.0f); // Adjust blur radius
+
 
       // Clear the overlay first
       graphicOverlay.clear();
@@ -412,10 +417,21 @@ public final class StillImageActivity extends AppCompatActivity {
     }
   }
 
+  private void drawRectangleOnBitmap(Bitmap bitmap, RectF rect) {
+    Canvas canvas = new Canvas(bitmap);
+    Paint paint = new Paint();
+    paint.setColor(Color.RED);
+    paint.setStyle(Paint.Style.STROKE);
+    paint.setStrokeWidth(5);
+    canvas.drawRect(rect, paint);
+  }
+
+
   private void drawRectangle() {
     // Get the original bitmap from the preview ImageView
     Bitmap originalBitmap = ((BitmapDrawable) preview.getDrawable()).getBitmap().copy(Bitmap.Config.ARGB_8888, true);
-
+    drawRectangleOnBitmap(originalBitmap, drawnRect);
+    preview.setImageBitmap(originalBitmap);
     // Create a Canvas to draw on the mutable bitmap
     Canvas canvas = new Canvas(originalBitmap);
 
@@ -437,7 +453,7 @@ public final class StillImageActivity extends AppCompatActivity {
   private void processImageInRectangle(float startX, float startY, float endX, float endY) {
     // Get the original bitmap from the preview ImageView
     Bitmap originalBitmap = ((BitmapDrawable) preview.getDrawable()).getBitmap();
-
+    drawRectangleOnBitmap(originalBitmap, new RectF(startX, startY, endX, endY));
     // Calculate the rectangle coordinates in terms of the original image
     int imageWidth = originalBitmap.getWidth();
     int imageHeight = originalBitmap.getHeight();
@@ -489,11 +505,13 @@ public final class StillImageActivity extends AppCompatActivity {
     return blurredBitmap;
   }
 
-  public static Bitmap convertToGrayscale(Bitmap originalBitmap) {
+
+
+  public static Bitmap convertToBinary(Bitmap originalBitmap, int threshold) {
     int width = originalBitmap.getWidth();
     int height = originalBitmap.getHeight();
 
-    Bitmap grayscaleBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+    Bitmap binaryBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
 
     int[] pixels = new int[width * height];
     originalBitmap.getPixels(pixels, 0, width, 0, 0, width, height);
@@ -505,12 +523,31 @@ public final class StillImageActivity extends AppCompatActivity {
       int blue = Color.blue(pixel);
 
       int luminance = (int) (0.299 * red + 0.587 * green + 0.114 * blue);
-      pixels[i] = Color.rgb(luminance, luminance, luminance);
+
+      // Apply thresholding
+      int binaryValue = (luminance > threshold) ? 255 : 0;
+
+      pixels[i] = Color.rgb(binaryValue, binaryValue, binaryValue);
     }
 
-    grayscaleBitmap.setPixels(pixels, 0, width, 0, 0, width, height);
+    binaryBitmap.setPixels(pixels, 0, width, 0, 0, width, height);
 
-    return grayscaleBitmap;
+    return binaryBitmap;
   }
+
+  private Bitmap preprocessImage(Bitmap originalBitmap) {
+    // Apply grayscale conversion
+
+
+    // Apply binary conversion
+    Bitmap binaryBitmap = convertToBinary(originalBitmap, 128);
+
+
+    return binaryBitmap;
+  }
+
+
+
+
 
 }
