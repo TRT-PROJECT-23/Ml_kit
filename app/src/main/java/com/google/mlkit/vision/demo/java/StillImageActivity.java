@@ -227,7 +227,6 @@ public final class StillImageActivity extends AppCompatActivity {
       startActivity(intent);
     });
 
-
   }
 
   @Override
@@ -515,4 +514,3 @@ public final class StillImageActivity extends AppCompatActivity {
   }
 
 }
-
