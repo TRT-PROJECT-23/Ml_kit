@@ -64,6 +64,7 @@ public class Glucose extends AppCompatActivity {
 
             // Log the generated JSON
             Log.d("Generated JSON", observationJson);
+            Log.d("Pretty", prettyJson);
         }    }
 
 

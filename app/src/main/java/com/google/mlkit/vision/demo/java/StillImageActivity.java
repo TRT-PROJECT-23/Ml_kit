@@ -27,7 +27,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.PorterDuff;
+
 import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
@@ -47,13 +47,11 @@ import android.view.MenuInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ArrayAdapter;
+
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
-import android.widget.Spinner;
+
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.common.annotation.KeepName;
@@ -61,7 +59,7 @@ import com.google.mlkit.vision.demo.BitmapUtils;
 import com.google.mlkit.vision.demo.GraphicOverlay;
 import com.google.mlkit.vision.demo.R;
 import com.google.mlkit.vision.demo.VisionImageProcessor;
-import com.google.mlkit.vision.demo.java.barcodescanner.BarcodeScannerProcessor;
+
 
 import com.google.mlkit.vision.demo.java.textdetector.TextRecognitionProcessor;
 
@@ -70,8 +68,7 @@ import com.google.mlkit.vision.demo.preference.SettingsActivity;
 
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+
 
 /** Activity demonstrating different image detector features with a still image from camera. */
 @KeepName

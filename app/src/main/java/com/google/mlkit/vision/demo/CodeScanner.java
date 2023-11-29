@@ -30,12 +30,10 @@ import android.util.Pair;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ArrayAdapter;
+
 import android.widget.ImageView;
 import android.widget.PopupMenu;
-import android.widget.Spinner;
+
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -46,13 +44,13 @@ import androidx.constraintlayout.widget.ConstraintSet;
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.mlkit.vision.demo.java.ChooserActivity;
 import com.google.mlkit.vision.demo.java.barcodescanner.BarcodeScannerProcessor;
-import com.google.mlkit.vision.demo.java.textdetector.TextRecognitionProcessor;
+
 import com.google.mlkit.vision.demo.preference.SettingsActivity;
-import com.google.mlkit.vision.text.latin.TextRecognizerOptions;
+
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+
+
 
 import android.content.SharedPreferences;
 
