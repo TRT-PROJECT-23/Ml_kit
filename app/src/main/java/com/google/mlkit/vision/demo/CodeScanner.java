@@ -36,6 +36,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -52,6 +53,8 @@ import com.google.mlkit.vision.text.latin.TextRecognizerOptions;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import android.content.SharedPreferences;
 
 /** Activity demonstrating different image detector features with a still image from camera. */
 @KeepName
@@ -335,11 +338,36 @@ public final class CodeScanner extends AppCompatActivity {
   }
 
   public void onNextButtonClick(View view) {
-    // Add the code to navigate to the next view here
-    // For example, you can start a new activity or fragment.
-    // Replace NextActivity.class with the appropriate destination.
+    // Get the TextView that holds the result
+    TextView resultTextView = findViewById(R.id.text1);
+
+    // Get the text from the TextView
+    String result = resultTextView.getText().toString().trim();
+
+    // Saving the result to SharedPreferences
+    SharedPreferences sharedPref = getSharedPreferences("MY_PREFS_NAME", MODE_PRIVATE);
+    SharedPreferences.Editor editor = sharedPref.edit();
+
+    // Check if the result is empty or contains the default text
+    if (result.isEmpty() || result.equals("Result will appear here")) {
+      // Set the text to "123456789" if the result is empty or contains the default text
+      result = "123456789";
+    }
+
+    // Save the retrieved text to SharedPreferences regardless of whether it's default
+    editor.putString("barcodeResult", result);
+    editor.apply();
+
+    // Now 'result' holds the retrieved text from the TextView or "123456789" if empty/default
+
+    // Navigate to the next activity
     Intent intent = new Intent(this, ChooserActivity.class);
     startActivity(intent);
   }
+
+
+
+
+
 
 }

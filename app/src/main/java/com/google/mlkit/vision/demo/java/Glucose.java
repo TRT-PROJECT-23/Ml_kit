@@ -1,5 +1,6 @@
 package com.google.mlkit.vision.demo.java;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -14,6 +15,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 
 public class Glucose extends AppCompatActivity {
@@ -26,16 +30,25 @@ public class Glucose extends AppCompatActivity {
 
 
         String detectedText = getIntent().getStringExtra("DETECTED_NUM");
-        float detected = Float.parseFloat(detectedText);
-        detected = detected/10.0f;
+        float detected;
+
+        if (!detectedText.contains(".")) {
+            detected = Float.parseFloat(detectedText);
+            detected = detected / 10.0f;
+        } else {
+            detected = Float.parseFloat(detectedText);
+        }
 
         Log.d("Detected", String.valueOf(detected));
         setContentView(R.layout.glucose);
 
+
+
+
         textView = findViewById(R.id.observationTextView); // Replace with your TextView ID
 
         // Create a JSON object for the HL7 FHIR Observation
-        JSONObject hl7FhirObservation = createHL7FhirObservation();
+        JSONObject hl7FhirObservation = createHL7FhirObservation(detected);
         if (hl7FhirObservation != null) {
             // Convert the JSON object to a string for display or further use
             String observationJson = hl7FhirObservation.toString();
@@ -56,7 +69,7 @@ public class Glucose extends AppCompatActivity {
 
 
     // Function to create HL7 FHIR Observation JSON
-    private JSONObject createHL7FhirObservation() {
+    private JSONObject createHL7FhirObservation(float detected) {
         try {
             JSONObject hl7FhirObservation = new JSONObject();
 
@@ -64,94 +77,128 @@ public class Glucose extends AppCompatActivity {
             hl7FhirObservation.put("resourceType", "Observation");
             hl7FhirObservation.put("id", "blood-glucose");
 
-            // Add the 'meta' field
-            JSONObject meta = new JSONObject();
-            meta.put("versionId", "4");
-            meta.put("lastUpdated", "2020-08-04T08:03:31.384Z");
-            JSONArray profileArray = new JSONArray();
-            profileArray.put("http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab");
-            meta.put("profile", profileArray);
-            hl7FhirObservation.put("meta", meta);
-
-            // Add the 'text' field
             JSONObject text = new JSONObject();
             text.put("status", "generated");
             text.put("div", "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b>...</div>");
-            hl7FhirObservation.put("text", text);
 
-            // Add other fields similarly
 
-            // Add 'status' field
+            JSONObject identifier = new JSONObject();
+            identifier.put("use", "official");
+            identifier.put("system", "http://www.bmc.nl/zorgportal/identifiers/observations");
+            identifier.put("value", "6323");
+
+
             hl7FhirObservation.put("status", "final");
 
-            // Add 'category' field
-            JSONObject categoryObj = new JSONObject();
-            JSONArray categoryArray = new JSONArray();
-            JSONObject coding = new JSONObject();
-            coding.put("system", "http://terminology.hl7.org/CodeSystem/observation-category");
-            coding.put("code", "laboratory");
-            coding.put("display", "Laboratory");
-            categoryArray.put(coding);
-            categoryObj.put("coding", categoryArray);
-            categoryObj.put("text", "Laboratory");
-            hl7FhirObservation.put("category", categoryArray);
 
-            // Add 'code' field
-            JSONObject codeObj = new JSONObject();
+            JSONObject code = new JSONObject();
             JSONArray codingArray = new JSONArray();
-            JSONObject codeCoding = new JSONObject();
-            codeCoding.put("system", "http://loinc.org");
-            codeCoding.put("code", "2339-0");
-            codeCoding.put("display", "Glucose Bld-mCnc");
-            codingArray.put(codeCoding);
-            codeObj.put("coding", codingArray);
-            codeObj.put("text", "Glucose Bld-mCnc");
-            hl7FhirObservation.put("code", codeObj);
+            JSONObject coding = new JSONObject();
+            coding.put("system", "http://loinc.org");
+            coding.put("code", "15074-8");
+            coding.put("display", "Glucose [Moles/volume] in Blood");
 
-            // Add 'subject' field
-            JSONObject subjectObj = new JSONObject();
-            subjectObj.put("reference", "Patient/example1");
-            subjectObj.put("display", "Amy Shaw");
-            hl7FhirObservation.put("subject", subjectObj);
 
-            // Add 'effectiveDateTime' field
-            hl7FhirObservation.put("effectiveDateTime", "2005-07-05");
+            SharedPreferences sharedPref = getSharedPreferences("MY_PREFS_NAME", MODE_PRIVATE);
+            String storedResult = sharedPref.getString("barcodeResult", "");
 
-            // Add 'valueQuantity' field
-            JSONObject valueQuantityObj = new JSONObject();
-            valueQuantityObj.put("value", 76);
-            valueQuantityObj.put("unit", "mg/dL");
-            valueQuantityObj.put("system", "http://unitsofmeasure.org");
-            hl7FhirObservation.put("valueQuantity", valueQuantityObj);
+            JSONObject subject = new JSONObject();
+            subject.put("reference", "Patient/f001");
+            subject.put("display", storedResult);
 
-            // Add 'referenceRange' field
-            JSONObject referenceRangeObj = new JSONObject();
-            JSONObject lowObj = new JSONObject();
-            lowObj.put("value", 40);
-            lowObj.put("unit", "mg/dL");
-            lowObj.put("system", "http://unitsofmeasure.org");
-            lowObj.put("code", "mg/dL");
-            JSONObject highObj = new JSONObject();
-            highObj.put("value", 109);
-            highObj.put("unit", "mg/dL");
-            highObj.put("system", "http://unitsofmeasure.org");
-            highObj.put("code", "mg/dL");
-            JSONArray appliesToArray = new JSONArray();
-            JSONObject appliesToObj = new JSONObject();
-            JSONArray codingArrayAppliesTo = new JSONArray();
-            JSONObject codingAppliesTo = new JSONObject();
-            codingAppliesTo.put("system", "http://terminology.hl7.org/CodeSystem/referencerange-meaning");
-            codingAppliesTo.put("code", "normal");
-            codingAppliesTo.put("display", "Normal Range");
-            codingArrayAppliesTo.put(codingAppliesTo);
-            appliesToObj.put("coding", codingArrayAppliesTo);
-            appliesToObj.put("text", "Normal Range");
-            appliesToArray.put(appliesToObj);
-            referenceRangeObj.put("low", lowObj);
-            referenceRangeObj.put("high", highObj);
-            referenceRangeObj.put("appliesTo", appliesToArray);
+            hl7FhirObservation.put("subject", subject);
+
+
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX", Locale.getDefault());
+            String formattedTime = sdf.format(new Date()); // Get the current time in the specified format
+
+            Log.d("Current Time", formattedTime); // Log the current time (optional)
+
+            hl7FhirObservation.put("effectiveDateTime", formattedTime);
+            hl7FhirObservation.put("issued", formattedTime);
+
+
+
+            JSONObject device = new JSONObject();
+
+            JSONArray extensionArray = new JSONArray();
+
+            JSONObject deviceVersion = new JSONObject();
+            deviceVersion.put("url", "DeviceVersion");
+            deviceVersion.put("valueString", "TUAMK-2023");
+            extensionArray.put(deviceVersion);
+
+            SimpleDateFormat ymd = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+            String formattedYMD = ymd.format(new Date()); // Get the current date in the specified format (yyyy-MM-dd)
+
+
+            JSONObject lastSyncTime = new JSONObject();
+            lastSyncTime.put("url", "lastSyncTime");
+            lastSyncTime.put("valueDateTime", formattedYMD);
+            extensionArray.put(lastSyncTime);
+
+            device.put("extension", extensionArray);
+
+            hl7FhirObservation.put("device", device);
+
+
+            // Retrieve the username from SharedPreferences
+            SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+            String savedUsername = sharedPreferences.getString("USERNAME_KEY", "");
+
+
+
+            JSONArray performerArray = new JSONArray();
+            JSONObject performer = new JSONObject();
+            performer.put("reference", "Practitioner/f005");
+            performer.put("display", savedUsername);
+            performerArray.put(performer);
+
+            hl7FhirObservation.put("performer", performerArray);
+
+
+            JSONObject valueQuantity = new JSONObject();
+            valueQuantity.put("value", detected);
+            valueQuantity.put("unit", "mmol/l");
+            valueQuantity.put("system", "http://unitsofmeasure.org");
+            valueQuantity.put("code", "mmol/L");
+
+            hl7FhirObservation.put("valueQuantity", valueQuantity);
+
+
+            JSONArray interpretationArray = new JSONArray();
+            JSONObject interpretation = new JSONObject();
+            JSONArray codingInterpretationArray = new JSONArray();
+            JSONObject codingInterpretation = new JSONObject();
+            codingInterpretation.put("system", "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation");
+            codingInterpretation.put("code", "H");
+            codingInterpretation.put("display", "High");
+            codingInterpretationArray.put(codingInterpretation);
+            interpretation.put("coding", codingInterpretationArray);
+            interpretationArray.put(interpretation);
+
+            hl7FhirObservation.put("interpretation", interpretationArray);
+
+
             JSONArray referenceRangeArray = new JSONArray();
-            referenceRangeArray.put(referenceRangeObj);
+            JSONObject referenceRange = new JSONObject();
+            JSONObject low = new JSONObject();
+            low.put("value", 3.1);
+            low.put("unit", "mmol/l");
+            low.put("system", "http://unitsofmeasure.org");
+            low.put("code", "mmol/L");
+
+            JSONObject high = new JSONObject();
+            high.put("value", 6.2);
+            high.put("unit", "mmol/l");
+            high.put("system", "http://unitsofmeasure.org");
+            high.put("code", "mmol/L");
+
+            referenceRange.put("low", low);
+            referenceRange.put("high", high);
+
+            referenceRangeArray.put(referenceRange);
+
             hl7FhirObservation.put("referenceRange", referenceRangeArray);
 
             // Return the JSON object

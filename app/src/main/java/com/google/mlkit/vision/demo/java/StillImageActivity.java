@@ -212,24 +212,24 @@ public final class StillImageActivity extends AppCompatActivity {
 
     Button nextButton = findViewById(R.id.nextButton);
     nextButton.setOnClickListener(view -> {
-      // Get the detected text or user input
-
       // Find the TextView by its ID
       TextView text0TextView = findViewById(R.id.text0);
       String textFromTextView = null;
-      if (text0TextView != null) {
+      if (text0TextView == null || "Result will appear here".equals(text0TextView.getText().toString())) {
+        textFromTextView = "5.5";
+        Log.e("Error", "text0TextView is null or contains 'Result will appear here', assigned default value");
+      } else {
         textFromTextView = text0TextView.getText().toString();
         Log.d("TextFromTextView", textFromTextView);
       }
 
-
-      String detectedText = ""; // Replace this with the actual detected text or user input
 
       // Proceed to the next activity, passing the text
       Intent intent = new Intent(StillImageActivity.this, Glucose.class);
       intent.putExtra("DETECTED_NUM", textFromTextView); // Pass the text to the next activity
       startActivity(intent);
     });
+
 
   }
 
