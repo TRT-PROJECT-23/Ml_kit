@@ -17,7 +17,7 @@
     <dimen name="padding_standard">10dp</dimen>
     <string name="app_name" translatable="false">Mittaukset</string>
     <string name="custom_object_detection" translatable="false">Custom Object Detector</string>
-    <string name="desc_camera_source_activity" translatable="false">Vision detectors demo with live camera preview</string>
+    <string name="desc_camera_source_activity" translatable="false">Read from Blood glucose meter</string>
     <string name="desc_camerax_live_preview_activity" translatable="false">Vision detectors demo with live preview using CameraX. Note that CameraX is only supported on API 21+</string>
     <string name="desc_cameraxsource_demo_activity" translatable="false">Object detection with custom classifier using ML Kit CameraXSource API. Note that CameraX is only supported on API 21+</string>
     <string name="desc_still_image_activity" translatable="false">Vision detectors demo with a still image</string>
