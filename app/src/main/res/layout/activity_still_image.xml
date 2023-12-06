@@ -34,7 +34,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="of the instrumen's"
+        android:text="of the instrument's"
         android:textSize="32sp"
         android:textStyle="bold"
         android:textColor="@color/white"
