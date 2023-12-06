@@ -30,16 +30,20 @@ public class Glucose extends AppCompatActivity {
 
 
         String detectedText = getIntent().getStringExtra("DETECTED_NUM");
-        float detected;
+        double detected;
 
-        if (!detectedText.contains(".")) {
-            detected = Float.parseFloat(detectedText);
-            detected = detected / 10.0f;
+        if (detectedText != null && !detectedText.isEmpty()) {
+            if (!detectedText.contains(".")) {
+                detected = Double.parseDouble(detectedText) / 10.0; // Parse as double
+            } else {
+                detected = Double.parseDouble(detectedText); // Parse as double
+            }
         } else {
-            detected = Float.parseFloat(detectedText);
+            detected = 5.6; // Set the value to 5.6 if detectedText is null or empty
         }
 
         Log.d("Detected", String.valueOf(detected));
+
         setContentView(R.layout.glucose);
 
 
@@ -70,7 +74,7 @@ public class Glucose extends AppCompatActivity {
 
 
     // Function to create HL7 FHIR Observation JSON
-    private JSONObject createHL7FhirObservation(float detected) {
+    private JSONObject createHL7FhirObservation(double detected) {
         try {
             JSONObject hl7FhirObservation = new JSONObject();
 

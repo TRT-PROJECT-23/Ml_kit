@@ -36,6 +36,8 @@ import com.google.mlkit.vision.text.Text.Line;
 import com.google.mlkit.vision.text.TextRecognition;
 import com.google.mlkit.vision.text.TextRecognizer;
 import com.google.mlkit.vision.text.TextRecognizerOptionsInterface;
+
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -96,19 +98,45 @@ public class TextRecognitionProcessor extends VisionProcessorBase<Text> {
   }
   // Method to extract only the digits from the recognized text
   private String extractDigits(Text text) {
+    // Define character replacements using a HashMap
+    HashMap<Character, Character> replacements = new HashMap<>();
+    replacements.put('I', '1');
+    replacements.put('i', '1');
+    replacements.put('S', '5');
+    replacements.put('s', '5');
+    replacements.put('O', '0');
+    replacements.put('o', '0');
+    replacements.put('z', '2');
+    replacements.put('Z', '2');
+    // Add more replacements as needed
+
     StringBuilder digits = new StringBuilder();
     for (Text.TextBlock textBlock : text.getTextBlocks()) {
       for (Text.Line line : textBlock.getLines()) {
         for (Text.Element element : line.getElements()) {
-          // Check if the recognized element contains only digits
-          if (element.getText().matches("\\d+")) {
-            digits.append(element.getText());
+          String elementText = element.getText();
+
+          // Replace characters based on the defined replacements
+          StringBuilder replacedText = new StringBuilder();
+          for (char c : elementText.toCharArray()) {
+            if (Character.isDigit(c)) {
+              replacedText.append(c);
+            } else {
+              char replacement = replacements.getOrDefault(c, c);
+              replacedText.append(replacement);
+            }
+          }
+
+          // Check if the modified text contains only digits
+          if (replacedText.toString().matches("\\d+")) {
+            digits.append(replacedText);
           }
         }
       }
     }
     return digits.toString();
   }
+
 
   private static void logExtrasForTesting(Text text) {
     if (text != null) {
