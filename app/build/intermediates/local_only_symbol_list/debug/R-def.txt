@@ -39,6 +39,7 @@ id preview_view
 id root
 id select_image_button
 id select_images_from_local
+id sendDataButton
 id settings_button
 id settings_container
 id spinner
@@ -130,5 +131,6 @@ string start_over
 string toggle_turn_off
 string toggle_turn_on
 style AppTheme
+xml network_security_config
 xml preference_live_preview_quickstart
 xml preference_still_image

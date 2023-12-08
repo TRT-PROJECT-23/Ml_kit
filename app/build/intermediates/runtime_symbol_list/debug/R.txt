@@ -1094,6 +1094,7 @@ int id search_voice_btn 0x7f0700e0
 int id select_dialog_listview 0x7f0700e1
 int id select_image_button 0x7f0700e2
 int id select_images_from_local 0x7f0700e3
+int id sendDataButton 0x7f07012a
 int id settings_button 0x7f0700e4
 int id settings_container 0x7f0700e5
 int id shortcut 0x7f0700e6
@@ -2759,5 +2760,6 @@ int[] styleable ViewStubCompat { 0x010100d0, 0x010100f2, 0x010100f3 }
 int styleable ViewStubCompat_android_id 0
 int styleable ViewStubCompat_android_layout 1
 int styleable ViewStubCompat_android_inflatedId 2
+int xml network_security_config 0x7f100002
 int xml preference_live_preview_quickstart 0x7f100000
 int xml preference_still_image 0x7f100001

@@ -16,4 +16,14 @@
             android:textSize="18sp" />
     </ScrollView>
 
+    <!-- Add a button at the bottom of the screen -->
+    <Button
+        android:id="@+id/sendDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Data"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
 </RelativeLayout>

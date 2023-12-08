@@ -1095,6 +1095,7 @@ id search_voice_btn
 id select_dialog_listview
 id select_image_button
 id select_images_from_local
+id sendDataButton
 id settings_button
 id settings_container
 id shortcut
@@ -1768,5 +1769,6 @@ styleable Variant constraints region_heightLessThan region_heightMoreThan region
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml network_security_config
 xml preference_live_preview_quickstart
 xml preference_still_image

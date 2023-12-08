@@ -3,6 +3,8 @@ package com.google.mlkit.vision.demo.java;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +17,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -23,11 +30,12 @@ import java.util.Locale;
 public class Glucose extends AppCompatActivity {
 
     private TextView textView;
+    private Button sendDataButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.glucose);
 
         String detectedText = getIntent().getStringExtra("DETECTED_NUM");
         double detected;
@@ -44,13 +52,20 @@ public class Glucose extends AppCompatActivity {
 
         Log.d("Detected", String.valueOf(detected));
 
-        setContentView(R.layout.glucose);
-
-
-
 
         textView = findViewById(R.id.observationTextView); // Replace with your TextView ID
+        sendDataButton = findViewById(R.id.sendDataButton);
 
+        SharedPreferences sharedPref = getSharedPreferences("MY_PREFS_NAME", MODE_PRIVATE);
+        String storedResult = sharedPref.getString("barcodeResult", "");
+        int id = Integer.parseInt(storedResult);
+
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        String savedUsername = sharedPreferences.getString("USERNAME_KEY", "");
+        sendDataButton.setOnClickListener(v -> {
+            sendGlucoseDataToServer(id, detected, savedUsername);
+            sendDataButton.setVisibility(View.GONE); // Hide the button after sending data
+        });
         // Create a JSON object for the HL7 FHIR Observation
         JSONObject hl7FhirObservation = createHL7FhirObservation(detected);
         if (hl7FhirObservation != null) {
@@ -152,7 +167,6 @@ public class Glucose extends AppCompatActivity {
             String savedUsername = sharedPreferences.getString("USERNAME_KEY", "");
 
 
-
             JSONArray performerArray = new JSONArray();
             JSONObject performer = new JSONObject();
             performer.put("reference", "Practitioner/f005");
@@ -213,4 +227,104 @@ public class Glucose extends AppCompatActivity {
         }
         return null;
     }
+
+    private void sendGlucoseDataToServer(int pId, double detected, String savedUsername) {
+        new Thread(() -> {
+            try {
+                URL url = new URL("http://ServerAddress/" + pId); //Replace with actual address
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("POST");
+                conn.setRequestProperty("Content-Type", "application/json");
+                conn.setRequestProperty("Accept", "application/json");
+                conn.setDoOutput(true);
+
+                // Create JSON object for the request body
+                JSONObject requestBody = new JSONObject();
+                requestBody.put("practitioner", savedUsername);
+                requestBody.put("result", detected);
+
+                // Convert request body to string and send it
+                OutputStream os = conn.getOutputStream();
+                os.write(requestBody.toString().getBytes("UTF-8"));
+                os.flush();
+                os.close();
+
+                int responseCode = conn.getResponseCode();
+
+                if (responseCode == HttpURLConnection.HTTP_CREATED) {
+                    // Glucose data added successfully
+                    Log.d("GlucoseAdded", "Glucose data added for person with ID " + pId);
+                    // Handle success or perform any action on successful addition
+
+                    // Fetch and display person details after adding glucose data
+                    fetchPersonDetails(pId);
+                } else {
+                    // Failed to add glucose data
+                    Log.d("GlucoseNotAdded", "Failed to add glucose data");
+                    // Handle failure or perform any action on failed addition
+                }
+
+                conn.disconnect();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).start();
+    }
+
+    // Method to fetch and display person details after adding glucose data
+    private void fetchPersonDetails(int personId) {
+        new Thread(() -> {
+            try {
+                URL url = new URL("http://ServerAddress/" + personId); //Replace with actual address
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+                conn.setRequestProperty("Accept", "application/json");
+
+                int responseCode = conn.getResponseCode();
+                if (responseCode == HttpURLConnection.HTTP_OK) {
+                    BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                    String inputLine;
+                    StringBuilder response = new StringBuilder();
+                    while ((inputLine = in.readLine()) != null) {
+                        response.append(inputLine);
+                    }
+                    in.close();
+
+                    // Handle the response (stored in 'response' StringBuilder) here
+                    Log.d("Response", response.toString());
+
+                    // Update UI or perform actions based on the response data
+                    // For example, parse the JSON response and display in TextView
+                    JSONObject jsonResponse = new JSONObject(response.toString());
+
+                    // Format the JSON for display in TextView
+                    String formattedJson = formatJson(jsonResponse);
+
+                    // Update UI with formatted JSON data
+                    runOnUiThread(() -> {
+                        TextView personDetailsTextView = findViewById(R.id.observationTextView); // Replace with your TextView ID
+                        personDetailsTextView.setText(formattedJson);
+                    });
+                } else {
+                    // Handle unsuccessful response
+                    Log.d("FetchFailed", "Failed to fetch person details. Response code: " + responseCode);
+                }
+
+                conn.disconnect();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).start();
+    }
+
+    // Helper method to format JSON for display
+    private String formatJson(JSONObject jsonObject) {
+        try {
+            return jsonObject.toString(4); // Indentation of 4 spaces for better readability
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
 }
