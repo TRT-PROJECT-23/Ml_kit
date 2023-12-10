@@ -8,12 +8,26 @@
         android:layout_height="match_parent"
         android:padding="8dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
         <TextView
             android:id="@+id/observationTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="HL7 FHIR Observation JSON will be displayed here"
             android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/responseTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Server Response will be displayed here"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+        </LinearLayout>
     </ScrollView>
 
     <!-- Add a button at the bottom of the screen -->

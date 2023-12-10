@@ -1072,6 +1072,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id responseTextView
 id reverseSawtooth
 id right
 id right_icon
@@ -1769,6 +1770,5 @@ styleable Variant constraints region_heightLessThan region_heightMoreThan region
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
-xml network_security_config
 xml preference_live_preview_quickstart
 xml preference_still_image

@@ -36,6 +36,7 @@ id next_button
 id observationTextView
 id preview
 id preview_view
+id responseTextView
 id root
 id select_image_button
 id select_images_from_local
@@ -131,6 +132,5 @@ string start_over
 string toggle_turn_off
 string toggle_turn_on
 style AppTheme
-xml network_security_config
 xml preference_live_preview_quickstart
 xml preference_still_image

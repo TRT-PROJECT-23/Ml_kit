@@ -1,7 +1,11 @@
 package com.google.mlkit.vision.demo.java;
 
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +29,8 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class Glucose extends AppCompatActivity {
@@ -63,7 +69,7 @@ public class Glucose extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         String savedUsername = sharedPreferences.getString("USERNAME_KEY", "");
         sendDataButton.setOnClickListener(v -> {
-            sendGlucoseDataToServer(id, detected, savedUsername);
+            sendGlucoseDataToServer(detected);
             sendDataButton.setVisibility(View.GONE); // Hide the button after sending data
         });
         // Create a JSON object for the HL7 FHIR Observation
@@ -228,60 +234,48 @@ public class Glucose extends AppCompatActivity {
         return null;
     }
 
-    private void sendGlucoseDataToServer(int pId, double detected, String savedUsername) {
+    private void sendGlucoseDataToServer(double detected) {
         new Thread(() -> {
             try {
-                URL url = new URL("http://ServerAddress/" + pId); //Replace with actual address
+                // URL of the server endpoint
+                URL url = new URL("https://setalat.fi/FHIR-srv.php");
+
+                // Open connection
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setRequestProperty("Content-Type", "application/json");
                 conn.setRequestProperty("Accept", "application/json");
                 conn.setDoOutput(true);
 
-                // Create JSON object for the request body
-                JSONObject requestBody = new JSONObject();
-                requestBody.put("practitioner", savedUsername);
-                requestBody.put("result", detected);
+                // Construct JSON data similar to the PHP example
+                JSONObject data = new JSONObject();
+                data.put("resourceType", "Observation");
 
-                // Convert request body to string and send it
+                JSONObject code = new JSONObject();
+                JSONArray coding = new JSONArray();
+                JSONObject codingObj = new JSONObject();
+                codingObj.put("system", "http://loinc.org");
+                codingObj.put("code", "15074-8");
+                codingObj.put("display", "Glucose [Moles/volume] in Blood");
+                coding.put(codingObj);
+                code.put("coding", coding);
+                data.put("code", code);
+
+                JSONObject valueQuantity = new JSONObject();
+                valueQuantity.put("value", detected);
+                valueQuantity.put("unit", "mmol/l");
+                data.put("valueQuantity", valueQuantity);
+
+                // Convert JSON data to string and send it
                 OutputStream os = conn.getOutputStream();
-                os.write(requestBody.toString().getBytes("UTF-8"));
+                os.write(data.toString().getBytes("UTF-8"));
                 os.flush();
                 os.close();
 
                 int responseCode = conn.getResponseCode();
 
-                if (responseCode == HttpURLConnection.HTTP_CREATED) {
-                    // Glucose data added successfully
-                    Log.d("GlucoseAdded", "Glucose data added for person with ID " + pId);
-                    // Handle success or perform any action on successful addition
-
-                    // Fetch and display person details after adding glucose data
-                    fetchPersonDetails(pId);
-                } else {
-                    // Failed to add glucose data
-                    Log.d("GlucoseNotAdded", "Failed to add glucose data");
-                    // Handle failure or perform any action on failed addition
-                }
-
-                conn.disconnect();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }).start();
-    }
-
-    // Method to fetch and display person details after adding glucose data
-    private void fetchPersonDetails(int personId) {
-        new Thread(() -> {
-            try {
-                URL url = new URL("http://ServerAddress/" + personId); //Replace with actual address
-                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                conn.setRequestMethod("GET");
-                conn.setRequestProperty("Accept", "application/json");
-
-                int responseCode = conn.getResponseCode();
                 if (responseCode == HttpURLConnection.HTTP_OK) {
+                    // Read and handle the response from the server
                     BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                     String inputLine;
                     StringBuilder response = new StringBuilder();
@@ -290,24 +284,53 @@ public class Glucose extends AppCompatActivity {
                     }
                     in.close();
 
-                    // Handle the response (stored in 'response' StringBuilder) here
-                    Log.d("Response", response.toString());
-
-                    // Update UI or perform actions based on the response data
-                    // For example, parse the JSON response and display in TextView
-                    JSONObject jsonResponse = new JSONObject(response.toString());
-
-                    // Format the JSON for display in TextView
-                    String formattedJson = formatJson(jsonResponse);
-
-                    // Update UI with formatted JSON data
+                    // Hide the JSON TextView
                     runOnUiThread(() -> {
-                        TextView personDetailsTextView = findViewById(R.id.observationTextView); // Replace with your TextView ID
-                        personDetailsTextView.setText(formattedJson);
+                        TextView jsonTextView = findViewById(R.id.observationTextView);
+                        jsonTextView.setVisibility(View.GONE);
                     });
+
+                    // Handle the response here
+                    String serverResponse = response.toString();
+                    Log.d("ServerResponse", serverResponse);
+
+                    // Parse HTML response to extract necessary data
+                    String parsedResponse = parseHTMLResponse(serverResponse);
+
+                    // Determine value status (low, normal, high) based on the detected value
+                    String valueStatus;
+                    String statusText;
+                    int color;
+                    if (detected < 3.9) {
+                        valueStatus = "Low";
+                        statusText = "Status: Low";
+                        color = Color.BLUE;
+                    } else if (detected >= 3.9 && detected <= 5.6) {
+                        valueStatus = "Normal";
+                        statusText = "Status: Normal";
+                        color = Color.GREEN;
+                    } else {
+                        valueStatus = "High";
+                        statusText = "Status: High";
+                        color = Color.RED;
+                    }
+
+                    // Display parsed response along with value status in the responseTextView
+                    String displayText = parsedResponse + "\n" + statusText;
+                    SpannableString spannableString = new SpannableString(displayText);
+                    ForegroundColorSpan colorSpan = new ForegroundColorSpan(color);
+                    int startIndex = displayText.indexOf(statusText);
+                    int endIndex = startIndex + statusText.length();
+                    spannableString.setSpan(colorSpan, startIndex, endIndex, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+                    runOnUiThread(() -> {
+                        TextView responseTextView = findViewById(R.id.responseTextView); // Replace with your TextView ID
+                        responseTextView.setText(spannableString);
+                        responseTextView.setVisibility(View.VISIBLE);
+                    });
+
+                    // Process the server response as needed
                 } else {
-                    // Handle unsuccessful response
-                    Log.d("FetchFailed", "Failed to fetch person details. Response code: " + responseCode);
+                    // Handle failure or non-OK response code
                 }
 
                 conn.disconnect();
@@ -317,14 +340,21 @@ public class Glucose extends AppCompatActivity {
         }).start();
     }
 
-    // Helper method to format JSON for display
-    private String formatJson(JSONObject jsonObject) {
-        try {
-            return jsonObject.toString(4); // Indentation of 4 spaces for better readability
-        } catch (JSONException e) {
-            e.printStackTrace();
+    private String parseHTMLResponse(String htmlResponse) {
+        String extractedData = "";
+
+        // Extracting required data using regular expressions (modify this based on your HTML structure)
+        Pattern pattern = Pattern.compile("<td>(.*?)</td><td>(.*?)</td>");
+        Matcher matcher = pattern.matcher(htmlResponse);
+
+        while (matcher.find()) {
+            String key = matcher.group(1);
+            String value = matcher.group(2);
+            extractedData += key + ": " + value + "\n";
         }
-        return "";
+
+        return extractedData;
     }
+
 
 }
