@@ -68,10 +68,7 @@ public class Glucose extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         String savedUsername = sharedPreferences.getString("USERNAME_KEY", "");
-        sendDataButton.setOnClickListener(v -> {
-            sendGlucoseDataToServer(detected);
-            sendDataButton.setVisibility(View.GONE); // Hide the button after sending data
-        });
+
         // Create a JSON object for the HL7 FHIR Observation
         JSONObject hl7FhirObservation = createHL7FhirObservation(detected);
         if (hl7FhirObservation != null) {
@@ -90,7 +87,12 @@ public class Glucose extends AppCompatActivity {
             // Log the generated JSON
             Log.d("Generated JSON", observationJson);
             Log.d("Pretty", prettyJson);
-        }    }
+        }
+        sendDataButton.setOnClickListener(v -> {
+            sendGlucoseDataToServer(hl7FhirObservation);
+            sendDataButton.setVisibility(View.GONE); // Hide the button after sending data
+        });
+    }
 
 
 
@@ -196,8 +198,23 @@ public class Glucose extends AppCompatActivity {
             JSONArray codingInterpretationArray = new JSONArray();
             JSONObject codingInterpretation = new JSONObject();
             codingInterpretation.put("system", "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation");
-            codingInterpretation.put("code", "H");
-            codingInterpretation.put("display", "High");
+
+            String interpretationCode;
+            String interpretationDisplay;
+
+            if (detected < 3.1) {
+                interpretationCode = "L"; // Interpretation code for Low
+                interpretationDisplay = "Low";
+            } else if (detected >= 3.1 && detected <= 6.2) {
+                interpretationCode = "N"; // Interpretation code for Normal
+                interpretationDisplay = "Normal";
+            } else {
+                interpretationCode = "H"; // Interpretation code for High
+                interpretationDisplay = "High";
+            }
+
+            codingInterpretation.put("code", interpretationCode);
+            codingInterpretation.put("display", interpretationDisplay);
             codingInterpretationArray.put(codingInterpretation);
             interpretation.put("coding", codingInterpretationArray);
             interpretationArray.put(interpretation);
@@ -234,7 +251,7 @@ public class Glucose extends AppCompatActivity {
         return null;
     }
 
-    private void sendGlucoseDataToServer(double detected) {
+    private void sendGlucoseDataToServer(JSONObject hl7FhirObservation) {
         new Thread(() -> {
             try {
                 // URL of the server endpoint
@@ -247,28 +264,12 @@ public class Glucose extends AppCompatActivity {
                 conn.setRequestProperty("Accept", "application/json");
                 conn.setDoOutput(true);
 
-                // Construct JSON data similar to the PHP example
-                JSONObject data = new JSONObject();
-                data.put("resourceType", "Observation");
+                //JSON to String
+                String formattedJson = hl7FhirObservation.toString();
 
-                JSONObject code = new JSONObject();
-                JSONArray coding = new JSONArray();
-                JSONObject codingObj = new JSONObject();
-                codingObj.put("system", "http://loinc.org");
-                codingObj.put("code", "15074-8");
-                codingObj.put("display", "Glucose [Moles/volume] in Blood");
-                coding.put(codingObj);
-                code.put("coding", coding);
-                data.put("code", code);
-
-                JSONObject valueQuantity = new JSONObject();
-                valueQuantity.put("value", detected);
-                valueQuantity.put("unit", "mmol/l");
-                data.put("valueQuantity", valueQuantity);
-
-                // Convert JSON data to string and send it
+                // Write the JSON string to the output stream
                 OutputStream os = conn.getOutputStream();
-                os.write(data.toString().getBytes("UTF-8"));
+                os.write(formattedJson.getBytes("UTF-8"));
                 os.flush();
                 os.close();
 
@@ -297,34 +298,12 @@ public class Glucose extends AppCompatActivity {
                     // Parse HTML response to extract necessary data
                     String parsedResponse = parseHTMLResponse(serverResponse);
 
-                    // Determine value status (low, normal, high) based on the detected value
-                    String valueStatus;
-                    String statusText;
-                    int color;
-                    if (detected < 3.9) {
-                        valueStatus = "Low";
-                        statusText = "Status: Low";
-                        color = Color.BLUE;
-                    } else if (detected >= 3.9 && detected <= 5.6) {
-                        valueStatus = "Normal";
-                        statusText = "Status: Normal";
-                        color = Color.GREEN;
-                    } else {
-                        valueStatus = "High";
-                        statusText = "Status: High";
-                        color = Color.RED;
-                    }
 
                     // Display parsed response along with value status in the responseTextView
-                    String displayText = parsedResponse + "\n" + statusText;
-                    SpannableString spannableString = new SpannableString(displayText);
-                    ForegroundColorSpan colorSpan = new ForegroundColorSpan(color);
-                    int startIndex = displayText.indexOf(statusText);
-                    int endIndex = startIndex + statusText.length();
-                    spannableString.setSpan(colorSpan, startIndex, endIndex, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+
                     runOnUiThread(() -> {
                         TextView responseTextView = findViewById(R.id.responseTextView); // Replace with your TextView ID
-                        responseTextView.setText(spannableString);
+                        responseTextView.setText(parsedResponse);
                         responseTextView.setVisibility(View.VISIBLE);
                     });
 
@@ -340,21 +319,98 @@ public class Glucose extends AppCompatActivity {
         }).start();
     }
 
-    private String parseHTMLResponse(String htmlResponse) {
-        String extractedData = "";
+    private String parseHTMLResponse(String htmlResponse) throws JSONException {
+        StringBuilder extractedData = new StringBuilder();
 
-        // Extracting required data using regular expressions (modify this based on your HTML structure)
-        Pattern pattern = Pattern.compile("<td>(.*?)</td><td>(.*?)</td>");
+        // Extracting specific data using a custom regular expression pattern
+        Pattern pattern = Pattern.compile("<td>(resourceType|id|status|subject|effectiveDateTime|device|performer|valueQuantity|interpretation)</td><td>(.*?)</td>");
         Matcher matcher = pattern.matcher(htmlResponse);
 
         while (matcher.find()) {
             String key = matcher.group(1);
             String value = matcher.group(2);
-            extractedData += key + ": " + value + "\n";
+
+            // Format key-value pairs
+            switch (key) {
+                case "resourceType":
+                    extractedData.append("Resource Type: ").append(value).append("\n");
+                    break;
+                case "id":
+                    extractedData.append("ID: ").append(value).append("\n");
+                    break;
+                case "status":
+                    extractedData.append("Status: ").append(value).append("\n");
+                    break;
+                case "effectiveDateTime":
+                    extractedData.append("Effective Date Time: ").append(value).append("\n");
+                    break;
+                case "subject":
+                    JSONObject subjectJson = new JSONObject(value);
+                    String reference = subjectJson.optString("reference", "");
+                    String display = subjectJson.optString("display", "");
+                    extractedData.append("Subject Reference: ").append(reference).append("\n");
+                    extractedData.append("Subject Display: ").append(display).append("\n");
+                    break;
+                case "device":
+                    JSONObject deviceJson = new JSONObject(value);
+                    JSONArray extensions = deviceJson.optJSONArray("extension");
+                    if (extensions != null && extensions.length() > 0) {
+                        JSONObject firstExtension = extensions.optJSONObject(0);
+                        if (firstExtension != null) {
+                            String url = firstExtension.optString("url", "");
+                            String valueString = firstExtension.optString("valueString", "");
+                            extractedData.append("Device Extension - ").append(url).append(": ").append(valueString).append("\n");
+                        }
+                    }
+                    break;
+                case "performer":
+                    JSONArray performers = new JSONArray(value);
+                    for (int i = 0; i < performers.length(); i++) {
+                        JSONObject performer = performers.optJSONObject(i);
+                        if (performer != null) {
+                            String referenceValue = performer.optString("reference", "");
+                            String displayValue = performer.optString("display", "");
+                            extractedData.append("Performer ").append(i + 1).append(" Reference: ").append(referenceValue).append("\n");
+                            extractedData.append("Performer ").append(i + 1).append(" Display: ").append(displayValue).append("\n");
+                        }
+                    }
+                    break;
+                case "valueQuantity":
+                    JSONObject valueQuantityJson = new JSONObject(value);
+                    double quantityValue = valueQuantityJson.optDouble("value", 0.0);
+                    String unit = valueQuantityJson.optString("unit", "");
+                    extractedData.append("Value Quantity: ").append(quantityValue).append(" ").append(unit).append("\n");
+                    break;
+                case "interpretation":
+                    try {
+                        JSONArray interpretationArray = new JSONArray(value);
+                        for (int i = 0; i < interpretationArray.length(); i++) {
+                            JSONObject interpretationObj = interpretationArray.getJSONObject(i);
+                            JSONArray codingArray = interpretationObj.getJSONArray("coding");
+                            for (int j = 0; j < codingArray.length(); j++) {
+                                JSONObject codingObj = codingArray.getJSONObject(j);
+                                String interpretationCode = codingObj.optString("code", "");
+                                String interpretationDisplay = codingObj.optString("display", "");
+                                extractedData.append("Interpretation Code: ").append(interpretationCode).append("\n");
+                                extractedData.append("Interpretation Display: ").append(interpretationDisplay).append("\n");
+                            }
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                default:
+                    extractedData.append(key).append(": ").append(value).append("\n");
+                    break;
+            }
         }
 
-        return extractedData;
+        return extractedData.toString();
     }
+
+
+
+
 
 
 }
